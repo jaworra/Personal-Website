@@ -164,33 +164,32 @@
         }
     </style>
 
-<style>
-.triangles {
-    fill: none;
-  }
-  
-  .links {
-    stroke: #eee;
-  }
-  
-  .sites {
-    fill: #ddd;
-    stroke: #fff;
-  }
-  
-  .triangles .primary {
-    fill: #eee;
-  }
-  
-  .links .primary {
-    stroke: #ddd;
-  }
-  
-  .sites :first-child {
-    fill: #000;
-  }
-      </style>
-
+    <style>
+        .triangles {
+            fill: none;
+        }
+        
+        .links {
+            stroke: #eee;
+        }
+        
+        .sites {
+            fill: #ddd;
+            stroke: #fff;
+        }
+        
+        .triangles .primary {
+            fill: #eee;
+        }
+        
+        .links .primary {
+            stroke: #ddd;
+        }
+        
+        .sites:first-child {
+            fill: #000;
+        }
+    </style>
 
 </head>
 
@@ -220,96 +219,94 @@
             <!-- .container -->
         </header>
         <!-- #masthead -->
-                    <div class="row"></div>
+        <div class="row"></div>
 
-                    <!-- banners -->
-                    <!--<svg width="1500" height="200"></svg>-->
-                        <script src="//d3js.org/d3.v3.min.js"></script>
-                        <script>
-                        
-                        var width = 1500,
-                            height = 200;
-                        
-                        var sample = uniformRandomSampler(width, height, 3000);
-                        
-                        var svg = d3.select("body").append("svg")
-                            .attr("width", width)
-                            .attr("height", height);
-                        
-                        d3.timer(function() {
-                          for (var i = 0; i < 10; ++i) {
-                            var s = sample();
-                            if (!s) return true;
-                            svg.append("circle")
-                                .attr("cx", s[0])
-                                .attr("cy", s[1])
-                                .attr("r", 0)
-                                .style("stroke-opacity", .7)
-                                .style("stroke", "darkgrey") 
-                                .style('fill', '#ddd')
-                              .transition()
-                                .attr("r", 2);
-                          }
-                        });
-                        
-                        function uniformRandomSampler(width, height, numSamplesMax) {
-                          var numSamples = 0;
-                          return function() {
-                            if (++numSamples > numSamplesMax) return;
-                            return [Math.random() * width, Math.random() * height];
-                          };
-                        }
-                        </script>
+        <!-- banners -->
+        <!--<svg width="1500" height="200"></svg>-->
+        <script src="//d3js.org/d3.v3.min.js"></script>
+        <script>
+            var width = 1500,
+                height = 200;
 
-                    </div>
+            var sample = uniformRandomSampler(width, height, 3000);
 
-                 <!--   
+            var svg = d3.select("body").append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            d3.timer(function() {
+                for (var i = 0; i < 10; ++i) {
+                    var s = sample();
+                    if (!s) return true;
+                    svg.append("circle")
+                        .attr("cx", s[0])
+                        .attr("cy", s[1])
+                        .attr("r", 0)
+                        .style("stroke-opacity", .7)
+                        .style("stroke", "darkgrey")
+                        .style('fill', '#ddd')
+                        .transition()
+                        .attr("r", 2);
+                }
+            });
+
+            function uniformRandomSampler(width, height, numSamplesMax) {
+                var numSamples = 0;
+                return function() {
+                    if (++numSamples > numSamplesMax) return;
+                    return [Math.random() * width, Math.random() * height];
+                };
+            }
+        </script>
+
+    </div>
+
+    <!--   
                 </div>
             </div>
         </div> -->
-        <!-- .main-banner -->
-        <div id="content" class="site-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12 layout-right-sidebar">
-                        <div id="primary" class="content-area">
-                            <main id="main" class="site-main" role="main">
+    <!-- .main-banner -->
+    <div id="content" class="site-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 layout-right-sidebar">
+                    <div id="primary" class="content-area">
+                        <main id="main" class="site-main" role="main">
 
-                                <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
-                                    <div class="detail-wrap">
-                                        <header class="entry-header">
+                            <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
+                                <div class="detail-wrap">
+                                    <header class="entry-header">
                                         <h2 class="entry-title"><a><b>Research</b></a></h2> </header>
-                                        
-                                        <p>Academic profiles</p> 
-                                        <span class="cat-links">
+
+                                    <p>Academic profiles</p>
+                                    <span class="cat-links">
                                             <a rel="category tag">Google </a>,
                                             <a rel="category tag"> arXiv</a>, 
                                             <a rel="category tag"> ORCID</a> 
                                         </span>
-                                        <div class="entry-content">
-                                        
-                                        </div>
-                                        <p>Code profiles</p>
-                                        <span class="cat-links">
+                                    <div class="entry-content">
+
+                                    </div>
+                                    <p>Code profiles</p>
+                                    <span class="cat-links">
                                             <a href="https://github.com/jaworra" rel="category tag">GitHub</a>, 
                                             <a href="https://hub.docker.com/u/jaworra" rel="category tag">DockerHub</a>
                                         </span>
-                                        <div class="entry-content">
-                                        
-                                        <h5 class="entry-title"><b>Research themes</b></h5> 
+                                    <div class="entry-content">
+
+                                        <h5 class="entry-title"><b>Research themes</b></h5>
                                         <span class="cat-links"><a rel="category tag">Poission Processes</a></span>
                                         <div class="entry-content">
-                                        <p>In statistics and probability theory, a point process or point field is a collection of mathematical points randomly located on some underlying mathematical space such as the real line, the Cartesian plane, or more abstract spaces...</p>
+                                            <p>In statistics and probability theory, a point process or point field is a collection of mathematical points randomly located on some underlying mathematical space such as the real line, the Cartesian plane, or more abstract spaces...</p>
                                         </div>
 
                                     </div>
 
-                                </article>
-                                <!-- #post-## -->
+                            </article>
+                            <!-- #post-## -->
 
-
-                            </main>
-                            <!-- #main -->
+                        </main>
+                        <!-- #main -->
                         </div>
                         <!-- #primary -->
                     </div>
@@ -360,7 +357,7 @@
                             </section>
                         </aside>
                         <!-- #secondary -->
-                    </div>  
+                    </div>
                 </div>
                 <!-- .row -->
             </div>
