@@ -1,0 +1,24 @@
+.triangles {
+  fill: none;
+}
+
+.links {
+  stroke: #eee;
+}
+
+.sites {
+  fill: #ddd;
+  stroke: #fff;
+}
+
+.triangles .primary {
+  fill: #eee;
+}
+
+.links .primary {
+  stroke: #ddd;
+}
+
+.sites :first-child {
+  fill: #000;
+}
