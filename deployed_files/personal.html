@@ -191,7 +191,13 @@
   }
       </style>
 
-
+<style>
+    path {
+        stroke: black;
+        stroke-width: 1px;
+        fill: none;
+    }
+    </style>
 </head>
 
 <body class="home blog hfeed sticky-top">
@@ -221,45 +227,55 @@
         </header>
         <!-- #masthead -->
                     <div class="row"></div>
+            
+                    <script src="lib/SmoothRandom.js"></script>
+                    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+   
+                        <div id="canvas" ></div>
+                        <!--<input id="smooth" type="range" value="3" min="1" max="10" step="0.1" style="width:10%" />-->
+                        <input id="smooth" type="hidden" value="3"/>
+                    <script>
+                    var samples = 300;
+                    var size = {y:90, x:600 }
+                    var margin = 60;
+                    var xScale = d3.scale.linear().domain([0,samples-1]).range([0,size.x]);
+                    var yScale = d3.scale.linear().domain([0,1]).range([0,size.y]);
 
-                    <!-- banners -->
-                    <!--<svg width="1500" height="200"></svg>-->
-                        <script src="//d3js.org/d3.v3.min.js"></script>
-                        <script>
-                        
-                        var width = 1500,
-                            height = 200;
-                        
-                        var sample = uniformRandomSampler(width, height, 3000);
-                        
-                        var svg = d3.select("body").append("svg")
-                            .attr("width", width)
-                            .attr("height", height);
-                        
-                        d3.timer(function() {
-                          for (var i = 0; i < 10; ++i) {
-                            var s = sample();
-                            if (!s) return true;
-                            svg.append("circle")
-                                .attr("cx", s[0])
-                                .attr("cy", s[1])
-                                .attr("r", 0)
-                                .style("stroke-opacity", .7)
-                                .style("stroke", "darkgrey") 
-                                .style('fill', '#ddd')
-                              .transition()
-                                .attr("r", 2);
-                          }
-                        });
-                        
-                        function uniformRandomSampler(width, height, numSamplesMax) {
-                          var numSamples = 0;
-                          return function() {
-                            if (++numSamples > numSamplesMax) return;
-                            return [Math.random() * width, Math.random() * height];
-                          };
-                        }
-                        </script>
+                    var line = d3.svg.line().x(function (d,i) { return xScale(i); }).y(function (d) { return yScale(d); });
+                    
+                    var svg = d3.select("#canvas").append("svg").attr({ width:size.x+margin*2, height:size.y+margin*2 });
+                    svg.append("clipPath").attr("id", "clip")
+                       .append("rect").attr({ x:0, y:0, height:size.y, width:size.x });
+                    
+                    var r = SmoothRandom(d3.select("#smooth").node().value);
+                    
+                    function setSmoothing() {
+                     r = SmoothRandom(d3.select("#smooth").node().value, r());
+                    }
+                    //d3.select("form").on("change", setSmoothing);
+                    
+                    var data = [];
+                    for (var i=0; i<samples+1; i++) { data.push(r()); }
+                    
+                    
+                    var p = svg.append("g").attr({
+                                "transform": "translate("+margin+","+margin+")",
+                                "clip-path": "url(#clip)"
+                            }).append("path").datum(data);
+                    
+                    function update() {
+                        data.push(r());
+                        d3.select("path")
+                            .attr("d", line)
+                            .attr("transform", null)
+                            .transition().duration(100).ease("linear")
+                                .attr("transform", "translate("+xScale(-1)+",0)")
+                                .each("end", update);
+                        data.shift();
+                    }
+                    update();
+                    </script>
+
 
                     </div>
 
@@ -278,7 +294,7 @@
                                 <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
                                     <div class="detail-wrap">
                                         <header class="entry-header">
-                                        <h2 class="entry-title"><a >Personal</a></h2> </header>
+                                        <h2 class="entry-title"><a><b>Personal</b></a></h2> </header>
     
                                     </div>
 
