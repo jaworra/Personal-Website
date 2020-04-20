@@ -5,7 +5,7 @@
 - [ ] transition dns name mess analytics to johnworrall.com etc
 - [x] implement https 
 - [x] Sections - research, publications, downloads, contact, personal posts
-- [ ] wordpress template to my custom code, remove dependencies
+- [x] wordpress template to my custom code, remove dependencies
 
 ## npm/libraries/models
 
