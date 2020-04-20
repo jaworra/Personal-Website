@@ -2,8 +2,8 @@
 
 ## Migrate from blog to personal website
 
-- [ ] implement https 
 - [ ] transition dns name mess analytics to johnworrall.com etc
+- [x] implement https 
 - [x] Sections - research, publications, downloads, contact, personal posts
 - [ ] wordpress template to my custom code, remove dependencies
 
@@ -23,7 +23,7 @@
 
 ## Cloud Computing, AWS
 
-- [ ] vpc/ec2/application and network load balancing.
-- [ ] cloudfront/wfs and route53 for security, scalability and high availability 
+- [ ] vpc/ec2/wfs application and network load balancing.
 - [ ] investigate CORS via s3 to share model / visulisations to public
+- [x] cloudfront and route53 for security, scalability and high availability 
 - [x] init, project
