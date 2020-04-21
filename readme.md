@@ -8,7 +8,10 @@ Github actions for integarations and delivery to AWS resources. Depending on yml
 
 ### Endpoint 
 Website endpoint - is a static site hosted authorising public access via 'get' only ACL.
+Distributed site using cloudfront which cache for high availability - this means will need
+to invalidate endpoints to see changes. 
 http://messanalytics.org/
+
 
 ### Dependencies
 javascript (d3 vers4) for banners.
