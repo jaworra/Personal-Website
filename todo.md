@@ -2,7 +2,7 @@
 
 ## Migrate from blog to personal website
 
-- [ ] transition dns name mess analytics to johnworrall.com etc
+- [ ] map all address messanalytics.com / messanalytics.org to johnworrall.com with CNames
 - [x] implement https
 - [x] wordpress template to my custom code, remove dependencies
 
@@ -15,7 +15,7 @@
 
 ## CI/CD
 
-- [x] CD hosting in s3 aws account
+- [x] CD s3/cloudfront/route53 in aws account
 - [x] CI with github actions
 - [x] init, git commit
 
