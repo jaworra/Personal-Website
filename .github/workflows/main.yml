@@ -18,5 +18,3 @@ jobs:
 
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./deployed_files/ s3://website-personal-john-worrall --delete
-      #run: aws s3 sync ./deployed_files/ s3://messanalytics.org --delete
-      #run: aws s3 sync ./deployed_files/ s3://website-public-jaworra --delete
