@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <title>MESS Analytics &#8211; Mathematics, Spatial and Statistic and in Economics.</title>
-    
-        <link rel='stylesheet' id='bootstrap-css' href='lib/third-party/bootstrap.min.css?ver=4.8.9' type='text/css' media='all' />
-        <link rel='stylesheet' id='meanmenu-css' href='lib/third-party/meanmenu.css?ver=4.8.9' type='text/css' media='all' />
-        <link rel='stylesheet' id='font-awesome-css' href='lib/font-awesome/css/font-awesome.min.css?ver=4.8.9' type='text/css' media='all' />
-        <link rel='stylesheet' id='blog-way-fonts-css' href='lib/css/latin.css' type='text/css' media='all' />
-        <link rel='stylesheet' id='blog-way-style-css' href='lib/css/style.css?ver=4.8.9' type='text/css' media='all' />
-    
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MESS Analytics &#8211; Mathematics, Spatial and Statistic and in Economics.</title>
+
+    <link rel='stylesheet' id='bootstrap-css' href='../../../lib/third-party/bootstrap.min.css?ver=4.8.9' type='text/css' media='all' />
+    <link rel='stylesheet' id='meanmenu-css' href='../../../lib/third-party/meanmenu.css?ver=4.8.9' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='../../../lib/font-awesome/css/font-awesome.min.css?ver=4.8.9' type='text/css' media='all' />
+    <link rel='stylesheet' id='blog-way-fonts-css' href='../../../lib/css/latin.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='blog-way-style-css' href='../../../lib/css/style.css?ver=4.8.9' type='text/css' media='all' />
+
+    <style>
         body {
             color: #404040;
         }
@@ -96,41 +96,8 @@
             margin: 0 !important;
         }
     </style>
-
-<style>
-.triangles {
-    fill: none;
-  }
-  
-  .links {
-    stroke: #eee;
-  }
-  
-  .sites {
-    fill: #ddd;
-    stroke: #fff;
-  }
-  
-  .triangles .primary {
-    fill: #eee;
-  }
-  
-  .links .primary {
-    stroke: #ddd;
-  }
-  
-  .sites :first-child {
-    fill: #000;
-  }
-      </style>
-
-<style>
-    path {
-        stroke: black;
-        stroke-width: 1px;
-        fill: none;
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- take this out for no triangulation-->
 </head>
 
 <body class="home blog hfeed sticky-top">
@@ -142,13 +109,13 @@
                         <nav id="site-navigation" class="main-navigation" role="navigation">
                             <div class="menu-catergories-container">
                                 <ul id="primary-menu" class="menu">
-                                    <li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a href="index.html">Home</a></li>
-                                    <li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="research.html">Research</a></li>
-                                    <li id="menu-item-54" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="services.html">Services</a></li>
-                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="downloads.html">Downloads</a></li>
-                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="contacts.html">Contact</a></li>
-                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="personal.html">Personal</a></li>
-                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="posts.html">Posts</a></li>
+                                    <li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a href="../../../index.html">Home</a></li>
+                                    <li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="../../../research.html">Research</a></li>
+                                    <li id="menu-item-54" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="../../../services.html">Services</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../downloads.html">Downloads</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../contacts.html">Contact</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../personal.html">Personal</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../posts.html">Posts</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -159,63 +126,20 @@
             <!-- .container -->
         </header>
         <!-- #masthead -->
-                    <div class="row"></div>
-            
-                    <script src="lib/js/banner/SmoothRandom.js"></script>
-                    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-   
-                        <div id="canvas" ></div>
-                        <!--<input id="smooth" type="range" value="3" min="1" max="10" step="0.1" style="width:10%" />-->
-                        <input id="smooth" type="hidden" value="3"/>
-                    <script>
-                    var samples = 300;
-                    var size = {y:90, x:600 }
-                    var margin = 60;
-                    var xScale = d3.scale.linear().domain([0,samples-1]).range([0,size.x]);
-                    var yScale = d3.scale.linear().domain([0,1]).range([0,size.y]);
+        <div class="main-banner banner-disabled">
+            <div class="container">
+                <div class="row">
 
-                    var line = d3.svg.line().x(function (d,i) { return xScale(i); }).y(function (d) { return yScale(d); });
-                    
-                    var svg = d3.select("#canvas").append("svg").attr({ width:size.x+margin*2, height:size.y+margin*2 });
-                    svg.append("clipPath").attr("id", "clip")
-                       .append("rect").attr({ x:0, y:0, height:size.y, width:size.x });
-                    
-                    var r = SmoothRandom(d3.select("#smooth").node().value);
-                    
-                    function setSmoothing() {
-                     r = SmoothRandom(d3.select("#smooth").node().value, r());
-                    }
-                    //d3.select("form").on("change", setSmoothing);
-                    
-                    var data = [];
-                    for (var i=0; i<samples+1; i++) { data.push(r()); }
-                    
-                    
-                    var p = svg.append("g").attr({
-                                "transform": "translate("+margin+","+margin+")",
-                                "clip-path": "url(#clip)"
-                            }).append("path").datum(data);
-                    
-                    function update() {
-                        data.push(r());
-                        d3.select("path")
-                            .attr("d", line)
-                            .attr("transform", null)
-                            .transition().duration(100).ease("linear")
-                                .attr("transform", "translate("+xScale(-1)+",0)")
-                                .each("end", update);
-                        data.shift();
-                    }
-                    update();
-                    </script>
+                    <div class="site-branding">
 
+                        <h1 class="site-title"><a href="../../../posts.html" rel="home">MESS Analytics</a></h1>
 
+                        <p class="site-description">Blog on Mathematics, Economics, Spatial and Statistic </p>
                     </div>
-
-                 <!--   
+                    <!-- .site-branding -->
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- .main-banner -->
         <div id="content" class="site-content">
             <div class="container">
@@ -224,16 +148,31 @@
                         <div id="primary" class="content-area">
                             <main id="main" class="site-main" role="main">
 
-                                <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
+                                <article id="post-42" class="post-42 post type-post status-publish format-standard has-post-thumbnail hentry category-mathematics category-statistics tag-linear-regression tag-statistics">
                                     <div class="detail-wrap">
                                         <header class="entry-header">
-                                        <h2 class="entry-title"><a><b>Personal</b></a></h2> </header>
-    
+                                            <span class="cat-links"><a href="" rel="category tag">Mathematics</a>, <a href="" rel="category tag">Statistics</a></span>
+                                            <h1 class="entry-title">Fitting Linear Regression Models Part 2</h1> </header>
+                                        <!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p>Part One we looked at selecting of regressors through a number of criteria and the process that may be adopted.</p>
+                                <p>Part Two will focus on Residual Analysis, Diagnostic CheckÂ and Multicollinearity</p>
+                                <p><strong>Model Adequacy: Residual Analysis</strong></p>
+                                <p>In determining a linear model the usual assumption in the specification are not always guaranteed. For least squares the estimation of parameters as well as prediction depend on the validity of theses assumption. Therefore, it is critical to check if any assumptions that are violated and apply the necessary measures if needed.</p>
+                                <p>The checks on these adequacy of models assumptions are based on the analysis of these residuals. When the model is correctly fitted the residuals should confirm the assumptions and not show contradictions.</p>
+                                &nbsp;</p>
+                                        </div><!-- .entry-content -->
                                     </div>
 
                                 </article>
                                 <!-- #post-## -->
-
+                                <nav class="navigation post-navigation" role="navigation">
+                                    <h2 class="screen-reader-text">Post navigation</h2>
+                                    <div class="nav-links">
+                                        <div class="nav-next"><a href="../../../posts.html" rel="next">Blog home</a></div>
+                                    </div>
+                                </nav>
 
                             </main>
                             <!-- #main -->
@@ -260,16 +199,22 @@
                                         <a href="">Fitting Linear Regression Part 2</a>
                                     </li>
                                     <li>
-                                        <a href="">Fitting Linear Regression Models</a>
+                                        <a href="../07/fitting_linear_regression_models.html">Fitting Linear Regression Models</a>
                                     </li>
 
+                                </ul>
+                            </section>
+                            <section id="recent-comments-2" class="widget widget_recent_comments">
+                                <h2 class="widget-title">Recent Comments</h2>
+                                <ul id="recentcomments">
+                                    <li class="recentcomments"><span class="comment-author-link"><a href='' rel='external nofollow' class='url'>geometry dash</a></span> on <a href="/first-post/#comment-2">First Post</a></li>
                                 </ul>
                             </section>
                             <section id="archives-2" class="widget widget_archive">
                                 <h2 class="widget-title">Archives</h2>
                                 <ul>
-                                    <li><a href=''>October 2017</a></li>
-                                    <li><a href=''>July 2017</a></li>
+                                    <li><a href='../10/fitting_linear_regression_models_part2.html'>October 2017</a></li>
+                                    <li><a href='../07/fitting_linear_regression_models.html'>July 2017</a></li>
                                 </ul>
                             </section>
                             <section id="categories-2" class="widget widget_categories">
@@ -285,9 +230,10 @@
                                     </li>
                                 </ul>
                             </section>
+
                         </aside>
                         <!-- #secondary -->
-                    </div>  
+                    </div>
                 </div>
                 <!-- .row -->
             </div>
@@ -297,21 +243,17 @@
         <footer id="colophon" class="site-footer" role="contentinfo">
             <div class="site-info">
                 <div class="container">
-                    <div class="row">
-
-                    </div>
-                    <!-- .row -->
                 </div>
                 <!-- .container -->
             </div>
             <!-- .site-info -->
         </footer>
         <!-- #colophon -->
+
     </div>
     <!-- #page -->
 
     <a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-angle-up"></i></a>
-
 
 </body>
 
