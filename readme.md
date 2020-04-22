@@ -1,7 +1,7 @@
 # Personal Website template
 Personal, portfolio and blog website with theme inspired Mathematics, applied probablity and computational statistics.
 
-### CI/CD via github actions and aws s3
+### CI/CD, CI-github actions, CD-aws 
 Github actions for integarations and delivery to AWS resources. Depending on yml spec the static website is configured and built priot to  final step of running aws s3 sync via the AWS CLI of 'deployed_files' folder to S3 bucket 'messanalytics.org'. 
 
 ### Endpoint 
