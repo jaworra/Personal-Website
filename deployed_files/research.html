@@ -160,27 +160,52 @@
         <script>
             var width = 1500,
                 height = 200;
+                point_counter = 0
 
             var sample = uniformRandomSampler(width, height, 3000);
+            
+            function isPrime(num) {
+                for(var i = 2; i < num; i++)
+                    if(num % i === 0) return false;
+            return num > 1;
+            }
 
             var svg = d3.select("body").append("svg")
                 .attr("width", width)
                 .attr("height", height);
+            
+            
 
             d3.timer(function() {
+                point_counter++;
                 for (var i = 0; i < 10; ++i) {
-                    var s = sample();
-                    if (!s) return true;
+                var s = sample();
+                
+                if (!s) return true;
+                console.log(isPrime(point_counter) + "," + point_counter)
+                
+
+                if (isPrime(point_counter)) {
                     svg.append("circle")
                         .attr("cx", s[0])
                         .attr("cy", s[1])
-                        .attr("r", 0)
+                        .style("stroke-opacity", .7)
+                        .style("stroke", "white")
+                        .style('fill', 'black')
+                        .transition()
+                        .attr("r", 2);
+                    } else {
+                    svg.append("circle")
+                        .attr("cx", s[0])
+                        .attr("cy", s[1])
+                        .attr("r", 2)
                         .style("stroke-opacity", .7)
                         .style("stroke", "darkgrey")
                         .style('fill', '#ddd')
                         .transition()
                         .attr("r", 2);
-                }
+                        }   
+                    }
             });
 
             function uniformRandomSampler(width, height, numSamplesMax) {
@@ -251,7 +276,7 @@
                     </div>
                     <!-- .col-md-8 -->
 
-                    <div class="col-md-4 col-sm-12">
+                                       <div class="col-md-4 col-sm-12">
                         <aside id="secondary" class="widget-area" role="complementary">
 
                             <section id="search-2" class="widget widget_search">
