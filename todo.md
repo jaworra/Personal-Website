@@ -9,9 +9,9 @@
 
 ## npm/libraries and client side
 
-- [ ] latex library for markup 
 - [ ] typescript and react components for refresh rendering with banners.
 - [ ] update banner signal to include a smoothed average.
+- [x] latex library for markup 
 - [x] int, build
 
 ## CI/CD
