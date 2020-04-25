@@ -195,24 +195,28 @@
 
                                                     $$ { = 1 - \frac{ (Y - \hat Y)' ( Y- \hat Y)} { Y'Y - n \bar Y^2 }  = 1 - \frac{ SSError}{SSTotal} } $$
                                                     <!-- <img src="R2-e1508916070303-300x95.png" />-->
-                                                    <br /> The proportion of Y (about Y hat) explained by the regressors in the model is defined by <em>coefficients of multiple determination, R^2. </em>
+                                                    <p> The proportion of Y (about Y hat) explained by the regressors in the model is defined by <em>coefficients of multiple determination, R^2. </em>
                                                     <br /> If the SSRegression becomes larger or the SSError decreases the R^2 increase.
                                                     <br /> By including additional independent variables (regressors) increases R^2, even if coefficient maybe not too different from zero. So maximizing the number of variables included in model may also maximize R^2. We should therefore be careful in selecting model based on larger R^2.
                                                     <br />
                                                     <em><em><p><span style="color: #808080;">* To safeguard we can penalize inclusion of new variables unless they make </span>significant<span style="color: #808080;"> contribution, adjusted coefficient of multiple determination. n -1 is total degrees of freedom, n-p is residual degrees of freedom for model ith.</span></em></em>
                                                     </p></li><br />
-                                                <li><strong>Mean square residual</strong>. &#8211; Minimize <!--  <img src="R2-1-e1508917793128-300x49.png" /> -->
-
-                                                    $$ { \bar R^2_i  = 1 - \frac{SSError_i/(n-p)} { SSError_i/(n-p) } = 1 - \frac{n-1} { n-p } (1- R^2_i)} $$
+                                                <li><strong>Mean square residual</strong>. &#8211; Minimise <!--  <img src="R2-1-e1508917793128-300x49.png" /> -->
                                                     
-                                                    <br /> The most appropriate model is the smallest MSE value or te lowest unexplained variation per degree of freedom.</li>
-                                                    <br />
-                                                    <li><strong>Cm statistic</strong>.  &#8211; MinimizeSimilar To MSE, Cm tries to minimise the unexplained variance, though the square residuals and number of regressors *m and s^2 the mean square residual.
-                                                     Cm is closely related to R.</li>
+                                                    $$ { MSE_i = 1 - \frac{SSE_i} { n-p}} $$
+                                                    <p>where (n-p) is the residual for Model. 
+                                                    The most appropriate model is the smallest MSE value or the lowest unexplained variation per degree of freedom. The equivalence of MSE to R^2 shown as,</p></li>
+                                                    $$ { \bar R^2_i  = 1 - \frac{SSError_i/(n-p)} { SSTotal/(n-1) } = 1 - \frac{n-1} { n-p } (1- R^2_i)} $$
+                                                    
+                                                    <li><strong>Cm statistic</strong>.  &#8211; Minimise</li>
 
                                                     $$ { C_m  =  \frac{SSE_i} {s^2} - (n-2m) } $$
+                                                     <p>Similar To MSE, Cm  tries to minimise the unexplained variance, though the square residuals and number of regressors *m and s^2 the mean square residual.
+                                                     Cm is closely related to R. The proportion of variation explaied by the regression 
 
-                                                <li><strong>PRESS statistic</strong> &#8211; MinimizePrediction Error of Sum Squares (PRESS), future responses (predicted) are used to estimate the mean response.
+                                                <li><strong>PRESS statistic</strong> &#8211; Minimise
+                                                    $$ { PRESS_i  = \sum_{j=1}^n (y_j+ \hat y_j )^2  = \sum_{j=0}^n (  \frac{e_j} {1- {h_j}_j} )^2 } $$
+                                                    <p>Prediction Error of Sum Squares (PRESS), future responses (predicted) are used to estimate the mean response.
                                                     <br /> Steps
                                                     <br /> &#8211; Set regressors in given model and compute the prediction of each variable.
                                                     <br /> &#8211; Omit observation <em>j</em>, from the data and refit model to this reduce dataset.
@@ -220,15 +224,16 @@
                                                     <br /> &#8211; Repeat steps above fore each variable of model.
                                                     <br />
                                                     <br />
-                                                    $$ { PRESS_i  = \sum_{j=0}^n (y_j+ \hat y_j )^2  = \sum_{j=0}^n (  \frac{e_j} {1- {h_j}_j} )^2 } $$
+                                                    
                                                     <!--   <img src="PRESS-e1508922085982-300x79.png" /></li>--> 
 
-                                                <li><strong>AIC.</strong>Akaike&#8217;s Information Criterion. Understands that fitting more and more covariates can only reduce the residual sum of squares and Mean Square Error thus increasing R^2. 
-                                                    <br /> AIC uses a penalty term to discourage the introduction of unnecessary covariates.
+                                                <li><strong>AIC.</strong> &#8211; Minimise
                                                     $$ { AIC  = -2 log-likelihood + 2p } $$
+                                                    <p>Akaike&#8217;s Information Criterion. Understands that fitting more and more covariates can only reduce the residual sum of squares and Mean Square Error thus increasing R^2. 
+                                                        AIC uses a penalty term to discourage the introduction of unnecessary covariates.</p>
                                                     <!-- <img src="R23-2-e1508922159508-300x86.png" sizes="(max-width: 348px) 100vw, 348px" /></li>--> 
                                             </ol>
-                                            <p><strong>PROCEDURE</strong></p>
+                                            <b><strong>PROCEDURE</strong></b>
                                             <p>The following are standard procedures in choosing the &#8216;best&#8217; model.</p>
                                             <ol>
                                                 <li>All possible regressions. The process of fitting all the equation using the combination of regressors and then selecting the &#8216;best&#8217; model based on the previous criteria approach can be very time consuming and requires large computing power.</li>
@@ -236,6 +241,17 @@
                                                 <br /><li>Forward selection. Starting with only the intercept term fitted in the model. Like the backward elimination use of F-Statistic or AIC as the regressors are added to check contribution. The regressor variable with the highest simple correlation and F-value that is greater than Falpha enters the model first.</li>
                                                 <br /><li>Stepwise regression. Similar to forward selection, the procedure to starts with just intercept fitted. However, at each step all regressors entered into the model are reassessed by using a backward elimination approach.</li>
                                             </ol>
+
+                                            <p>Moving on from model selection, we will investigate model adequacy with residual analysis, diagnostic checks and Multi-collinearity</p>
+                                            <p><strong>Model Adequacy: Residual Analysis</strong></p>
+                                            <p>In determining a linear model the usual assumption in the specification are not always guaranteed. For least squares the estimation of parameters as well as prediction depend on the validity of theses assumption. Therefore, it is critical to check if any assumptions that are violated and apply the necessary measures if needed.</p>
+                                            <p>The checks on these adequacy of models assumptions are based on the analysis of these residuals. When the model is correctly fitted the residuals should confirm the assumptions and not show contradictions.</p>
+                                            &nbsp;</p>
+                                            <p>TO BE CONTINUED...</p> <!-- pg 93 studybook, statistical models --> 
+                     
+                                        
+                                        
+                                        
                                         </div>
                                         <!-- .entry-content -->
                                     </div>
