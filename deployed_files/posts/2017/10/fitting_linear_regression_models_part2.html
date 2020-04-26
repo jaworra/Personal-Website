@@ -7,12 +7,25 @@
 
     <title>MESS Analytics &#8211; Mathematics, Spatial and Statistic and in Economics.</title>
 
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//s.w.org">
+
     <link rel='stylesheet' id='bootstrap-css' href='../../../lib/third-party/bootstrap.min.css?ver=4.8.9' type='text/css' media='all' />
     <link rel='stylesheet' id='meanmenu-css' href='../../../lib/third-party/meanmenu.css?ver=4.8.9' type='text/css' media='all' />
     <link rel='stylesheet' id='font-awesome-css' href='../../../lib/font-awesome/css/font-awesome.min.css?ver=4.8.9' type='text/css' media='all' />
     <link rel='stylesheet' id='blog-way-fonts-css' href='../../../lib/css/latin.css' type='text/css' media='all' />
     <link rel='stylesheet' id='blog-way-style-css' href='../../../lib/css/style.css?ver=4.8.9' type='text/css' media='all' />
-
+     <!-- <link rel="stylesheet" href="styles.css">
+     <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/messanalytics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.12"}};
+        !function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+     -->
+    
+    
+    
+    
+    
     <style>
         body {
             color: #404040;
@@ -96,11 +109,12 @@
             margin: 0 !important;
         }
     </style>
-    <!-- <link rel="stylesheet" href="styles.css">-->
+   
     <!-- take this out for no triangulation-->
 </head>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
 
 <body class="home blog hfeed sticky-top">
     <div id="page" class="site">
@@ -149,51 +163,51 @@
                     <div class="col-md-8 col-sm-12 layout-right-sidebar">
                         <div id="primary" class="content-area">
                             <main id="main" class="site-main" role="main">
-
                                 <article id="post-42" class="post-42 post type-post status-publish format-standard has-post-thumbnail hentry category-mathematics category-statistics tag-linear-regression tag-statistics">
+                                    
                                     <div class="detail-wrap">
                                         <header class="entry-header">
                                             <span class="cat-links"> <a href="" rel="category tag">Statistics</a></span>
                                             <h1 class="entry-title">Fitting Linear Regression Models Part 2</h1> </header>
                                         <!-- .entry-header -->
 
-                                        <div class="entry-content">
-                                            <p>Part One suggest a process that may be adopted for model selection (with choosing regressors through a number of criteria)
-                                               and model adequacy (with residual analysis, diagnostic checks and multicollinearity for validity of assumptions).</p>
-                                            </p>
-                                <p>Part Two will be handling fitting General Linear Model by Least-Squares Estimation through the use of matrix algebra.</p>
-                                <p><strong>Fitting the Linear Model: Matrices</strong></p>
-                                <p>Recall, we have linear regression in a general form.</p>
+                                            <div class="entry-content">
+                                                <p>Part One suggest a process that may be adopted for model selection (with choosing regressors through a number of criteria)
+                                                and model adequacy (with residual analysis, diagnostic checks and multicollinearity for validity of assumptions).</p>
+                                                </p>
+                                                <p>Part Two will be handling fitting General Linear Model by Least-Squares Estimation through the use of matrix algebra.</p>
+                                                <p><strong>Fitting the Linear Model: Matrices</strong></p>
+                                                <p>Recall, we have linear regression in a general form.</p>
 
-                                $$ { Y  = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_k x_k} +\epsilon $$
-                                        
-                                <p> and we make n independent observations, y1,y2,y3 ... yn, on Y. We can write as yi observations as,</p>
-                                $$ { y_i  = \beta_0 + \beta_1 {x_i}_1 + \beta_2 {x_i}_2 + ... + \beta_k {x_i}_k} +\epsilon_i $$
+                                                $$ { Y  = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_k x_k} +\epsilon $$
+                                                        
+                                                <p> and we make n independent observations, y1,y2,y3 ... yn, on Y. We can write as yi observations as,</p>
+                                                $$ { y_i  = \beta_0 + \beta_1 {x_i}_1 + \beta_2 {x_i}_2 + ... + \beta_k {x_i}_k} +\epsilon_i $$
 
-                                <p>where xij is the set of the jith independent variable for th ith observation, i = 1,2,.., n. Defined as matrix, with x0 =1.</p>
-                                $$ \left[\begin{matrix}  y_1  \\  y_2  \\ \vdots  \\ y_n \end{matrix} \right] = 
-                                \left[\begin{matrix}  1 & {x_1}_1 & ... & {x_1}_k  \\  1 & {x_2}_1 & ... & {x_2}_k \\ \vdots & \vdots &   \ddots  &   \vdots \\ 1 & {x_n}_1 & ... & {x_n}_k \end{matrix} \right]
-                                
-                                \left[\begin{matrix}  \beta_1   \\  \beta_2  \\ \vdots \\ \beta_k \end{matrix} \right]  + 
-                                
-                                \left[\begin{matrix}  \epsilon_1   \\  \epsilon_2  \\ \vdots  \\ \epsilon_n \end{matrix} \right] $$
-                                
-                                        <p>Thus with matrix operations, the n equations representing yi as a functions of x's, beta's, and epsilon's can be simultaneously written as</p>
-                                        $$ { Y  = X\beta  +\epsilon }  $$ <p> Suppose we have a simple linear model with n observations. 
-                                        $$ { Y  = \beta_0 + \beta_1 x  +\epsilon }  $$
+                                                <p>where xij is the set of the jith independent variable for th ith observation, i = 1,2,.., n. Defined as matrix, with x0 =1.</p>
+                                                $$ \left[\begin{matrix}  y_1  \\  y_2  \\ \vdots  \\ y_n \end{matrix} \right] = 
+                                                \left[\begin{matrix}  1 & {x_1}_1 & ... & {x_1}_k  \\  1 & {x_2}_1 & ... & {x_2}_k \\ \vdots & \vdots &   \ddots  &   \vdots \\ 1 & {x_n}_1 & ... & {x_n}_k \end{matrix} \right]
+                                                
+                                                \left[\begin{matrix}  \beta_1   \\  \beta_2  \\ \vdots \\ \beta_k \end{matrix} \right]  + 
+                                                
+                                                \left[\begin{matrix}  \epsilon_1   \\  \epsilon_2  \\ \vdots  \\ \epsilon_n \end{matrix} \right] $$
+                                                    
+                                                <p>Thus with matrix operations, the n equations representing yi as a functions of x's, beta's, and epsilon's can be simultaneously written as</p>
+                                                $$ { Y  = X\beta  +\epsilon }  $$ <p> Suppose we have a simple linear model with n observations. 
+                                                $$ { Y  = \beta_0 + \beta_1 x  +\epsilon }  $$
 
-                                        $$ Y=\left[\begin{matrix}  y_1  \\  y_2  \\ \vdots  \\ y_n \end{matrix} \right]
-                                        ,  X =\left[\begin{matrix}  1 & x_1  \\  1 & x_2 \\ \vdots & \vdots  \\ 1 & {x_n} \end{matrix} \right]
-                                        , \epsilon = \left[\begin{matrix}  \epsilon_1   \\  \epsilon_2  \\ \vdots  \\ \epsilon_n \end{matrix} \right]
-                                        , \beta = \left[\begin{matrix}  \beta0  \\  \beta_1  \end{matrix} \right]  $$
+                                                $$ Y=\left[\begin{matrix}  y_1  \\  y_2  \\ \vdots  \\ y_n \end{matrix} \right]
+                                                ,  X =\left[\begin{matrix}  1 & x_1  \\  1 & x_2 \\ \vdots & \vdots  \\ 1 & {x_n} \end{matrix} \right]
+                                                , \epsilon = \left[\begin{matrix}  \epsilon_1   \\  \epsilon_2  \\ \vdots  \\ \epsilon_n \end{matrix} \right]
+                                                , \beta = \left[\begin{matrix}  \beta0  \\  \beta_1  \end{matrix} \right]  $$
 
-                                        <p>The least square equations for betas (coefficients) given by,</p>
-                                        $$ { n \hat\beta_0  = \hat\beta_1 \sum_{i=1}^n x_i  =  \sum_{i=1}^n y_i  }, $$
-                                        $$ { \hat\beta_0 \sum_{i=1}^n x_i + \hat\beta_1 \sum_{i=1}^n x^2_i  =  \sum_{i=1}^n x_iy_i  }. $$
-                                        
-                                        <p>TO BE CONTINUED... </p>     <!-- examples here pg 610 , text book statical text book -->      
+                                                <p>The least square equations for betas (coefficients) given by,</p>
+                                                $$ { n \hat\beta_0  = \hat\beta_1 \sum_{i=1}^n x_i  =  \sum_{i=1}^n y_i  }, $$
+                                                $$ { \hat\beta_0 \sum_{i=1}^n x_i + \hat\beta_1 \sum_{i=1}^n x^2_i  =  \sum_{i=1}^n x_iy_i  }. $$
+                                                
+                                                <p>TO BE CONTINUED... </p>     <!-- examples here pg 610 , text book statical text book + also include code snippets -->      
 
-                                        </div><!-- .entry-content -->
+                                            </div><!-- .entry-content -->
                                     </div>
 
                                 </article>

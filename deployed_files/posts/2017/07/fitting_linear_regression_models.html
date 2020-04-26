@@ -243,11 +243,34 @@
                                             </ol>
 
                                             <p>Moving on from model selection, we will investigate model adequacy with residual analysis, diagnostic checks and Multi-collinearity</p>
-                                            <p><strong>Model Adequacy: Residual Analysis</strong></p>
+                                            <p><strong>Model Adequacy</strong></p>
                                             <p>In determining a linear model the usual assumption in the specification are not always guaranteed. For least squares the estimation of parameters as well as prediction depend on the validity of theses assumption. Therefore, it is critical to check if any assumptions that are violated and apply the necessary measures if needed.</p>
                                             <p>The checks on these adequacy of models assumptions are based on the analysis of these residuals. When the model is correctly fitted the residuals should confirm the assumptions and not show contradictions.</p>
-                                            &nbsp;</p>
-                                            <p>TO BE CONTINUED...</p> <!-- pg 93 studybook, statistical models --> 
+                                            
+                                            
+                                             
+                                            <ol>
+                                            <li style="text-align: left;"><strong>Residual Analysis</strong></li>
+                                            <p>Residuals defined as,</p>
+                                            $$ { e_j  =y_j - \hat j,  j = 1,2, ...,n }$$
+
+                                            <p>Measuring the extent of departure from th regression assumptions, we will use it to detect
+                                                any violation in assumption. A measure of variability is </p>
+                                                $$ { \frac {\sum_{j=1}^n (e_j - \hat e )^2} {n - p} = 
+                                                    \frac {\sum_{j=1}^n e_j^2} {n - p} =  
+                                                    \frac {SS3} {n - p}
+                                                     = MSE = s^2, } $$
+                                                     
+                                            <p>unbiased least-square estimate of the error variance,</p>$$  Var[e = \sigma^2]$$
+                                            <p>working with scaled residuals, may convey more information than ordinary, shown as.</p>
+                                            $$ { d_j  =\frac {e_j} {\sqrt {MSE}} = \frac {e_j} {s} }$$
+                                            
+                                            <p> for j = 1,2,..,n.</p>
+                                            <p>TO BE CONTINUED...</p> <!-- pg 93 studybook, statistical models -->   
+                                            <li style="text-align: left;"><strong>Diagnostic Checks</strong></li>
+                                            <li style="text-align: left;"><strong>Multicollinearity</strong></li>
+                                            </ol>
+                                            
                      
                                         
                                         
