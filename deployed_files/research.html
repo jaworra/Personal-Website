@@ -97,6 +97,14 @@
         }
     </style>
 
+    <!-- banner dimensions  -->
+    <style type="text/css">
+        canvas {
+            width: 100%;
+            /* height: 100%; */
+        }
+    </style>
+
     <style>
         .triangles {
             fill: none;
@@ -153,12 +161,12 @@
         </header>
         <!-- #masthead -->
         <div class="row"></div>
-
         <!-- banners -->
-        <!--<svg width="1500" height="200"></svg>-->
         <script src="//d3js.org/d3.v3.min.js"></script>
+
         <script>
-            var width = 1500,
+            var screenWidth = window.screen.availWidth;
+            var width = screenWidth-1,
                 height = 200;
                 point_counter = 0
 

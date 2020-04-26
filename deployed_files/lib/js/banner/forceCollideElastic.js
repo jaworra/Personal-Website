@@ -56,7 +56,7 @@ function forceCollideElastic(radius) {
             if (x === 0) x = jiggle(), l += x * x;
             if (y === 0) y = jiggle(), l += y * y;
             
-            console.log('Collide!');
+            //console.log('Collide!');
 
             var π = Math.PI,
                 x1 = node.x,

@@ -96,35 +96,43 @@
             margin: 0 !important;
         }
     </style>
+    
     <style>
-
-
-
-.triangles {
-    fill: none;
-  }
-  
-  .links {
-    stroke: #eee;
-  }
-  
-  .sites {
-    fill: #ddd;
-    stroke: #fff;
-  }
-  
-  .triangles .primary {
-    fill: #eee;
-  }
-  
-  .links .primary {
-    stroke: #ddd;
-  }
-  
-  .sites :first-child {
-    fill: #000;
-  }
+        .triangles {
+            fill: none;
+        }
+        
+        .links {
+            stroke: #eee;
+        }
+        
+        .sites {
+            fill: #ddd;
+            stroke: #fff;
+        }
+        
+        .triangles .primary {
+            fill: #eee;
+        }
+        
+        .links .primary {
+            stroke: #ddd;
+        }
+        
+        .sites :first-child {
+            fill: #000;
+        }
       </style>
+
+
+
+    <!-- banner dimensions  -->
+    <style type="text/css">
+        canvas { 
+            width: 100%; 
+                }
+    </style>
+
 
 
 </head>
@@ -163,16 +171,18 @@
                         <script src="lib/js/banner/forceCollideElastic.js"></script>
 
                         
-                        <canvas id="historical" width="1500" height="200" style="position: absolute; left: 0; top: 0; z-index: 1"></canvas>
-                        <canvas id="realtime" width="1500" height="200" style="position: absolute; left: 0; top: 0; z-index: 2"></canvas>
+                        <canvas id="historical" width="1500" height="230" style="position: absolute; left: 0; top: 0; z-index: 1"></canvas>
+                        <canvas id="realtime" width="1500" height="230" style="position: absolute; left: 0; top: 0; z-index: 2"></canvas>
                         
                
                         <script>
 
 
-
-var width = 1500
-var height = 200
+var screenWidth = window.screen.availWidth; //1280
+// console.log(screenWidth)
+var width = screenWidth + 220;
+//var width = 1500
+var height =230;
 
 var gasMoleculeCount = 3000
 var dustCount = 10
@@ -273,7 +283,7 @@ function render() {
     
                         </script>
 
-<svg width="1500" height="200"></svg>     
+<svg  height="200"></svg>     
   
         <!-- .main-banner -->
         <div id="content" class="site-content">
