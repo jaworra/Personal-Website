@@ -282,11 +282,30 @@
                                             <p>DEFITS, is the difference in the fitted value standardised</p>
 
                                             <li style="text-align: left;"><strong>Multicollinearity</strong></li>
-                                            <p>Aside from error distributions and residuals, there are other types of problems
+                                            </br><p>Aside from error distributions and residuals, there are other types of problems
                                                 associated with fitting a regression model. Such as Multicollinearity.
                                             </p>
-                                            <p>Multicollinearity occurs when there is a linear or near-linear relationship between two or more regressors.</p>
-                                        
+                                            <p>Multicollinearity occurs when there is a linear or near-linear relationship between two or more regressors, 
+                                               identification of Multicollinearity methods can be described with the following methods.</p>
+                                            <p> Correlation matrix provide sample correlation coefficients of the regressors, these coefficients
+                                                show the strength of the linear relationship between the pairs of regressors.
+                                                A general adopted rule is that if a correlation coefficients is greater than 0.8 in absolute value then
+                                                there is a strong linear association which is indicative of presence of multicollinearity. Therefore, one
+                                                may simply check the of-diagonal elements of the correlation matrix to detect multicollinearity.</p>
+                                            
+                                            <p>The characteristic roots of (X'X) matrix can be used to measure the
+                                                extent of multicollinearity in a given data set. The presence of one
+                                                or more small characteristic roots indicates one or more linear dependencies among the regressors. 
+                                                The condition number of (X'X), defined as: </p>
+
+                                                $$ {\Psi = 	\frac{\lambda_*} {\lambda_* }   }$$
+
+                                            <p>where, lambda 1 and lambda 2 are the largest and smallest characteristic roots of
+                                                (X'X). Usually, if characteristic roots  < 100, the problem of multicollinearity is not
+                                                serious and if 100 <= characteristic roots < 1000, the problem is moderate to strong.
+                                                When characteristic roots > 1000 then there is an acute problem of multicollinearity.
+                                            </p>
+
                                             <p>TO BE CONTINUED...</p> <!-- pg 93 studybook, statistical models -->   
 
                                         </ol>
