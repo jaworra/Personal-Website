@@ -173,12 +173,18 @@
 
         <div class="row"></div>
         <svg width="1500" height="200"></svg>
+
+        
         <!--<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"> -->
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script>
+            var screenWidth = window.screen.availWidth;
+
             var svg = d3.select("svg").on("touchmove mousemove", moved),
-                width = +svg.attr("width"),
-                height = +svg.attr("height");
+                width = +screenWidth,
+                height = +200; 
+                //width = +svg.attr("width"),
+                //height = +svg.attr("height");
 
             var sites = d3.range(200)
                 .map(function(d) {
