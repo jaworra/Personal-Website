@@ -252,7 +252,10 @@
                                             <ol>
                                             <li style="text-align: left;"><strong>Residual Analysis</strong></li>
                                             <p>Residuals defined as,</p>
-                                            $$ { e_j  =y_j - \hat j,  j = 1,2, ...,n }$$
+
+                                            \[ 
+                                            \text{$e_j  =y_j -   \hat{j} $, where $j = 1,2, ...,n$} 
+                                            \]
 
                                             <p>Measuring the extent of departure from th regression assumptions, we will use it to detect
                                                 any violation in assumption. A measure of variability is </p>
@@ -298,7 +301,7 @@
                                                 or more small characteristic roots indicates one or more linear dependencies among the regressors. 
                                                 The condition number of (X'X), defined as: </p>
 
-                                                $$ {\Psi = 	\frac{\lambda_*} {\lambda_* }   }$$
+                                                $$ {\Psi = 	\frac{\lambda^*} {\lambda_* }   }$$
 
                                             <p>where, lambda 1 and lambda 2 are the largest and smallest characteristic roots of
                                                 (X'X). Usually, if characteristic roots  < 100, the problem of multicollinearity is not
@@ -306,7 +309,25 @@
                                                 When characteristic roots > 1000 then there is an acute problem of multicollinearity.
                                             </p>
 
-                                            <p>TO BE CONTINUED...</p> <!-- pg 93 studybook, statistical models -->   
+                                            <p>Possible solutions could be to include additional data or respecication of model.
+                                                Collection of more data, with appropriate sampling design for use in analysis so 
+                                                that the effect of multicollinearity is removed.
+                                                Respecication, for avoiding redundant variables reduces the chance of collinear effect
+                                                and the affects of multicollinearity. Identifying if regressors are nearly linearly independent
+                                                is possible with some functions as follow,
+                                            </p>
+
+                                            $$ { X^*_1 =X_1, X_2, X_3  \text{ or }  X_2 = \frac{X_1 + X_2} { X_3 } } $$
+                                            <!-- $$ \text{$x=4$ or $x=5$} $$ --> 
+
+                                            <p><b>Conclusion</b></p> 
+                                            <p>Selection a 'best' model is not easy as Nature is complicated.
+                                                The regressors that determine a model are potentially many. We have presented how assumptions
+                                                with models are often unrealistic. Verification of regression are critical and methods for selecting
+                                                regressors for a 'best' model. Sound inference on model is made when model is carefully selected and its 
+                                                assumptions are duly met. 
+                                            </p>
+                                            <!-- pg 93 studybook, statistical models -->   
 
                                         </ol>
                                             
