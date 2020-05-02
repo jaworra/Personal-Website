@@ -1,31 +1,32 @@
 # List of To-Dos
 
-## Migrate from blog to personal website
+## Migrate from blog to personal website - content
 
 - [ ] expire messanalytics.com and purchase johnworrall.com
-- [ ] SEO and blog content
+- [ ] blog content
 - [x] redirect all domains (*.messanalytics.org and *.johnworrall.com.au) to origin S3 bucket
 - [x] implement https
 - [x] wordpress template to my custom code, remove dependencies
 
-## npm/libraries and client side
+## npm/libraries and client side - framework
 
 - [ ] typescript and react components for refresh rendering with banners.
 - [ ] update banner signal to include a smoothed average.
 - [x] latex library for markup 
 - [x] int, build
 
-## CI/CD
+## CI/CD - Config
 
 - [x] CD s3/cloudfront/route53 in aws account
 - [x] CI with github actions
 - [x] init, git commit
 
-## Cloud Computing, AWS
+## Cloud Computing - Backend
 
 - [ ] vpc/ec2/wfs application and network load balancing.
 - [ ] investigate CORS via s3 to share model / visulisations to public
-- [ ] static to dynamic website (lambda&gateway) -  
+- [ ] static to dynamic website (lambda&gateway) 
+- [ ] SEO 
 - [x] fix cnames  (www and domain -> routes to https site)  * Most important ticket
 - [x] cloudfront and route53 for security, scalability and high availability 
 - [x] init, project
