@@ -103,39 +103,13 @@
         }
     </style>
     
-    <style>
-        .triangles {
-            fill: none;
-        }
-        
-        .links {
-            stroke: #eee;
-        }
-        
-        .sites {
-            fill: #ddd;
-            stroke: #fff;
-        }
-        
-        .triangles .primary {
-            fill: #eee;
-        }
-        
-        .links .primary {
-            stroke: #ddd;
-        }
-        
-        .sites :first-child {
-            fill: #000;
-        }
-      </style>
 
     <!-- banner dimensions  -->
     <style type="text/css">
         canvas { 
             width: 100%;
-            /*height: 20%;*/
-                }
+            height: 20%
+            }
     </style>
 
 </head>
@@ -170,22 +144,23 @@
                     <!-- banners -->
                     <!--<svg width="1500" height="200"></svg>-->
 
-                        <script src="https://d3js.org/d3.v4.min.js"></script>
-                        <script src="lib/js/banner/forceCollideElastic.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="lib/js/banner/forceCollideElastic.js"></script>
 
-                        
-                        <canvas id="historical" width="1500" height="230" style="position: absolute; left: 0; top: 0; z-index: 1"></canvas>
-                        <canvas id="realtime" width="1500" height="230" style="position: absolute; left: 0; top: 0; z-index: 2"></canvas>
-                        
-               
-                        <script>
+        <canvas id="historical" width="1500" height="150" style="position: absolute; left: 0; top: 0; z-index: 1"></canvas>
+        <canvas id="realtime" width="1500" height="150" style="position: absolute; left: 0; top: 0; z-index: 2"></canvas>           
 
+<script>       
 
 var screenWidth = window.screen.availWidth; //1280
-// console.log(screenWidth)
+var screenHeight= window.screen.availHeight; //1280
+//console.log(screenHeight*.2)
 var width = screenWidth + 220;
 //var width = 1500
-var height =230;
+//var height =200;
+var height = (screenHeight*.2) ;
+
+//var size = {y:90, x:600 }
 
 var gasMoleculeCount = 3000
 var dustCount = 10
@@ -284,11 +259,10 @@ function render() {
   realtimeContext.fill()
 }
     
-                        </script>
+</script>
 
-<svg  height="200"></svg>     
-  
-        <!-- .main-banner -->
+<svg  height="200"></svg>     <!-- start of contacts content-->
+
         <div id="content" class="site-content">
             <div class="container">
                 <div class="row">
