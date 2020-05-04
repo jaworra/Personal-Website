@@ -1,0 +1,75 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "deployed_files": {
+      "name": "deployed_files",
+      "isOrdered": true,
+      "folders": {
+        "lib": {
+          "name": "lib",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "posts": {
+          "name": "posts",
+          "isOrdered": true,
+          "folders": {
+            "2017": {
+              "name": "2017",
+              "isOrdered": true,
+              "folders": {
+                "10": {
+                  "name": "10",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "07": {
+                  "name": "07",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                }
+              },
+              "files": {}
+            },
+            "2020": {
+              "name": "2020",
+              "isOrdered": true,
+              "folders": {
+                "05": {
+                  "name": "05",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                }
+              },
+              "files": {}
+            }
+          },
+          "files": {}
+        }
+      },
+      "files": {}
+    },
+    "sample_sites": {
+      "name": "sample_sites",
+      "isOrdered": true,
+      "folders": {
+        "more_animations": {
+          "name": "more_animations",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        }
+      },
+      "files": {}
+    }
+  },
+  "files": {
+    "todo": 0,
+    "readme": 1
+  }
+}
