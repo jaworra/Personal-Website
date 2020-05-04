@@ -22,7 +22,7 @@
 
 ## Cloud Computing - Backend
 
-* [ ] static to dynamic website (lambda&gateway) or vpc/ec2/wfs application and network load balancing.
+* [ ] static to dynamic website (lambda&gateway) or vpc/ec2/wfs application and application load balancing.
 * [x] SEO
 * [x] fix cnames (www and domain -> routes to https site) \* Most important ticket
 * [x] cloudfront and route53 for security, scalability and high availability
