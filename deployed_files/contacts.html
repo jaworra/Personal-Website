@@ -107,8 +107,7 @@
     <!-- banner dimensions  -->
     <style type="text/css">
         canvas { 
-            width: 100%;
-            height: 20%
+            width: 100%
             }
     </style>
 
@@ -147,20 +146,21 @@
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script src="lib/js/banner/forceCollideElastic.js"></script>
 
-        <canvas id="historical" width="1500" height="150" style="position: absolute; left: 0; top: 0; z-index: 1"></canvas>
-        <canvas id="realtime" width="1500" height="150" style="position: absolute; left: 0; top: 0; z-index: 2"></canvas>           
+        <canvas id="historical" width="500" height="200" style="position: absolute; left: 0; top: 0; z-index: 1"></canvas>
+        <canvas id="realtime" width="500" height="200" style="position: absolute; left: 0; top: 0; z-index: 2"></canvas>           
 
-<script>       
+<script>      
 
-var screenWidth = window.screen.availWidth; //1280
-var screenHeight= window.screen.availHeight; //1280
-//console.log(screenHeight*.2)
-var width = screenWidth + 220;
-//var width = 1500
-//var height =200;
-var height = (screenHeight*.2) ;
+function setWidth(width) {
+    var canvas_historic = document.getElementById("historical");  
+    var canvas_real = document.getElementById("realtime");  
+    canvas_historic.width = window.screen.availWidth;
+    canvas_real.width = width;
+} 
+var width = window.screen.availWidth; //1280
+setWidth(width)
+var height = 200
 
-//var size = {y:90, x:600 }
 
 var gasMoleculeCount = 3000
 var dustCount = 10
