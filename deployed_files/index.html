@@ -104,14 +104,6 @@
         }
     </style>
 
-    <!-- banner dimensions  -->
-    <style type="text/css">
-        canvas {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-
 </head>
 
 <body class="home blog hfeed sticky-top">
@@ -143,9 +135,19 @@
         <!-- #banner  -->
         <div class="row"></div>
 
-        <canvas width="1500" height="150"></canvas> 
-
+        <canvas id = "canvas_id" width="1500" height="200"></canvas> 
         <script>
+
+
+        //resize svg widith
+        function setWidth(width) {
+            var canvas_id = document.getElementById("canvas_id");  
+            canvas_id.width = window.screen.availWidth;
+        } 
+        
+        var width =window.screen.availWidth;
+        setWidth(width);
+
             "undefined" == typeof requestAnimationFrame && (requestAnimationFrame = "undefined" != typeof window && (window.msRequestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.oRequestAnimationFrame) || function(e) {
                     return setTimeout(e, 17)
                 }),

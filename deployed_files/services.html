@@ -167,7 +167,7 @@
             <!-- .container -->
         </header>
         <!-- #masthead -->
-        <div class="row"></div>
+        <div class="row">
 
         <!-- banners -->
         <style>
@@ -182,14 +182,23 @@
             }
         </style>
         
-        <svg width="1500" height="200"></svg>
-        <!--var screenWidth = window.screen.availWidth;-->
+        <svg id="svg_graph" width="1500" height="200"></svg>
 
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script>
+
+            //resize svg widith
+            function setWidth(width) {
+                var svg_graph = document.getElementById("svg_graph");  
+                svg_graph.width = window.screen.availWidth;
+            } 
+            var width =window.screen.availWidth;
+            setWidth(width);
+
             var svg = d3.select("svg"),
-                width = +svg.attr("width"),
-                height = +svg.attr("height");
+                //width = +svg.attr("width"),
+                width = width-10,
+                height = +svg.attr("height")-25;
 
             var simulation = d3.forceSimulation()
                 .force("link", d3.forceLink().id(function(d) {
@@ -275,7 +284,7 @@
                 d.fy = null;
             }
         </script>
-
+        </div>
     </div>
 
     <!--   
