@@ -12,6 +12,7 @@
 * [ ] typescript and react components for refresh rendering with banners.
 * [ ] update banner signal to include a smoothed average.
 * [ ] banner needs to be less impactful - takes away from contents
+* [ ] interactive map - places travel
 * [x] latex library for markup
 * [x] int, build
 
