@@ -167,7 +167,7 @@
                                         <div class="entry-content">
                                              <!-- .entry-header -->
 
-                                        <p>My top ten real analysis exercises.</p>
+                                        <p>Some real analysis exercises.</p>
                                         <p>1. Triangle Inequality</p>
                                         <p>2. Archimedian Property</p>
                                         <p>3. Limit of a sequence is unique and convergence sequence is bounded</p>
@@ -181,8 +181,33 @@
 
                                         
                                         </br>
+
                                         <hr width="50%" size="8" align="center">
-                                        <p><strong>Limits and delta epsilon exercise</strong></p>
+                                        <p><strong>Cauchy sequences</strong></p>
+                                        $$ { \text{ Prove } \left \{ cos \left( \frac {1}{n} \right)   \right \}  \text{ is a Cauchy Sequence }  }$$ 
+                                        <p>Cauchy definition</p>
+                                        $$ { \text{ Recall, }  X_n   \text{ is Cauchy if } \forall \epsilon \gt 0  , \exists   N \in  \mathbb{Z}^+ \text{ s.t }\forall n,m  \gt N , |a_n-a_m|  \lt \epsilon  }$$  
+                                        
+                                        <p>Scratch work</p> 
+                                        $$ { \epsilon \gt 0  , \left| cos \left( \frac {1}{n} \right) - cos \left( \frac {1}{m} \right)  \right|  }$$ 
+                                        $$ { \text{ * }  cosu - cosv = -2sin \left(  \frac {u+v}{2}  \right) sin \left(  \frac {u-v}{2}  \right)  }$$ 
+
+                                        $$ {  \left| -2 sin \left( \frac { \frac {1}{n}+\frac {1}{m}}{2} \right) sin \left( \frac { \frac {1}{n}+\frac {1}{m}}{2} \right)    \right| }$$
+                                        $$ {  2 \left| sin \left( \frac { \frac {1}{n}+\frac {1}{m}}{2} \right)  \right| . \left| sin \left( \frac { \frac {1}{n}+\frac {1}{m}}{2} \right) \right|   }$$ 
+                                        $$ {  2 \left| sin \left( \frac { \frac {1}{n}+\frac {1}{m}}{2} \right)  \right| . 1 =  \left| \frac {1}{n}+\frac {1}{m} \right|  }$$
+                                        $$ { \text{*} \left| a+b  \right| \leq \left| a  \right| +\left| b  \right|  }$$ 
+                                        $$ {  \leq \left|  \frac {1}{n} \right|+ \left|\frac {1}{m}  \right| =  \frac {1}{n}+\frac {1}{m}  \lt \epsilon  \Rightarrow \frac {1}{n}  \lt \frac {\epsilon}{2}   }$$
+                                        $$ {  2 \lt n . \epsilon \Rightarrow {  \frac {2}{3} } \lt n \text{ or } n \gt \frac {2}{\epsilon}. N \gt \frac {2}{\epsilon}   }$$
+
+                                        <p>Proof</p>
+                                        $$ { \text{ Let } \epsilon  \gt 0. \text{ Choose } N \ \gt {  \frac {2}{3} } \text{, Then }  \forall n,m  \gt N , \left| cos \left( \frac {1}{n} \right) - cos \left( \frac {1}{m} \right)  \right|}$$
+                                        $$ {  \left| -2 sin \left( \frac { \frac {1}{n}+\frac {1}{m}}{2} \right) sin \left( \frac { \frac {1}{n}+\frac {1}{m}}{2} \right)    \right| }$$
+                                        $$ {  \leq \left|  \frac {1}{n} + \frac {1}{m}  \right| \leq  \frac {1}{n}+\frac {1}{m} \text{, Since  } n \gt N \gt  \frac {2}{\epsilon} \text{, so }n \gt \frac {2}{\epsilon}   }$$
+                                        $$ {  \frac {\epsilon}{2} \gt \frac {1}{n}  \text{, so }  \frac {1}{n}  \lt  \frac {\epsilon}{2} \text{. Likewise } m \gt \frac {2}{\epsilon} \text{, so } \frac {1}{m} \lt \frac {\epsilon}{2}   }$$
+                                        $$ {\text{ Then}  \left| cos \left( \frac {1}{n} \right) - cos \left( \frac {1}{m} \right)  \right| \leq  \frac {1}{n}+\frac {1}{m}  \lt \frac {\epsilon}{2} + \frac {\epsilon}{2}  = \epsilon \text{ &#x220E } }$$
+
+                                        </br><hr width="50%" size="8" align="center">
+                                        <p><strong>Limits and delta epsilon</strong></p>
                                         $$ { \text{ Prove }   \lim_{x \to 2} (x-2)^7 . cos \left( \frac {2}{x-2} \right) = 0 }$$ 
 
                                         <p>Limit definition</p>
@@ -203,7 +228,7 @@
                                         $$ { 0 \lt |x-2|  \lt f\ \text{, we have }  }$$ 
                                         $$ {  \left| (x-2)^7 . cos \left( \frac {2}{x-2} \right) - 0 \right| = | \left(x-2)\right|^7 . \left|cos \left( \frac {2}{x-2} \right)\right| }$$ 
                                         $$ { \leq |(x-2)|^7 \lt f\ ^7 = \left( \sqrt[7]\epsilon \right)^7 }$$ 
-                                        $$ {  = \epsilon \text{      &#x220E }  }$$ 
+                                        $$ {  = \epsilon \text{ &#x220E }  }$$ 
 
 
                                         </div>
