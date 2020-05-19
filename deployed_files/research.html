@@ -195,29 +195,62 @@
             return num > 1;
             }
 
+            function isFibonacciPrime(prime) {
+                //compare against integer sequence
+                Fibonacci_list = [2, 3, 5, 13, 89, 233, 1597, 28657, 514229, 433494437, 2971215073, 
+                99194853094755497, 1066340417491710595814572169, 19134702400093278081449423917, 
+                475420437734698220747368027166749382927701417016557193662268716376935476241]
+                var i = 0;
+                while(i < Fibonacci_list.length){
+                    if ( prime < Fibonacci_list[i]){
+                        break; //no need to calculate large values
+                    } else if ( prime == Fibonacci_list[i]){
+                        return true; // yes a Fibonacci_list
+                    }
+                i++;    
+                }
+            return false;
+            }
+
+
             var svg = d3.select("body").append("svg")
                 .attr("width", width)
                 .attr("height", height);
             
-            
-
+        
             d3.timer(function() {
-                point_counter++;
+                
                 for (var i = 0; i < 10; ++i) {
                 var s = sample();
                 
                 if (!s) return true;
+                point_counter++;
                 //console.log(isPrime(point_counter) + "," + point_counter)
+                if (isPrime(point_counter)) { //check for primes
+                    
+                        if (isFibonacciPrime(point_counter)) { //check for Fibonacci Primes
+                        svg.append("circle")
+                            .attr("cx", s[0])
+                            .attr("cy", s[1])
+                            .style("stroke-opacity", 1)
+                            .style("stroke", "orange")
+                            .style('fill', 'orange')
+                            .transition()
+                            .attr("r", 2);
+                            console.log('Fibonacci Prime:' + point_counter)
+                        } else {
+                            svg.append("circle")
+                            .attr("cx", s[0])
+                            .attr("cy", s[1])
+                            .style("stroke-opacity", .7)
+                            .style("stroke", "grey")
+                            .style('fill', 'grey')
+                            .transition()
+                            .attr("r", 2);
+                            //console.log('Prime:' + point_counter)
+                        }
 
-                if (isPrime(point_counter)) {
-                    svg.append("circle")
-                        .attr("cx", s[0])
-                        .attr("cy", s[1])
-                        .style("stroke-opacity", .7)
-                        .style("stroke", "white")
-                        .style('fill', 'black')
-                        .transition()
-                        .attr("r", 2);
+
                     } else {
                     svg.append("circle")
                         .attr("cx", s[0])
