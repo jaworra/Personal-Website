@@ -94,6 +94,16 @@
         .scrollup {
             background-color: #ea9920;
         }
+
+        /*Disable academic profiles non existant*/
+        .isDisabled {   
+            color: currentColor;
+            cursor: not-allowed;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+
     </style>
 
     <style type="text/css">
@@ -248,37 +258,38 @@
                             <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
                                 <div class="detail-wrap">
                                     <header class="entry-header">
+
                                         <h2 class="entry-title"><a><b>Research</b></a></h2> </header>
 
-                                    <p>Academic profiles</p>
-                                    <span class="cat-links">
-                                            <a rel="category tag">Google </a>,
-                                            <a rel="category tag"> arXiv</a>, 
-                                            <a rel="category tag"> ORCID</a> 
-                                        </span>
-                                    <div class="entry-content">
-
-                                    </div>
-                                    <p>Code profiles</p>
-                                    <span class="cat-links">
-                                            <a href="https://github.com/jaworra" rel="category tag">GitHub</a>, 
-                                            <a href="https://hub.docker.com/u/jaworra" rel="category tag">DockerHub</a>
-                                        </span>
-                                    <div class="entry-content">
-
-                                        <h5 class="entry-title"><b>Research themes</b></h5>
+                                        <h5 class="entry-title"></br><b>Research themes</b></h5>
                                         <span class="cat-links"><a rel="category tag">Poission Processes</a></span>
-                                        <div class="entry-content">
-                                            <p>In statistics and probability theory, a point process or point field is a collection of mathematical points randomly located on some underlying mathematical space such as the real line, the Cartesian plane, or more abstract spaces.</p>
-                                        </div>
+                                        
+                                        <p>In statistics and probability theory, a point process or point field is a collection of mathematical 
+                                            points randomly located on some underlying mathematical space such as the real line, the Cartesian plane, 
+                                            or more abstract spaces.</p>
+                                     
 
                                         <span class="cat-links"><a rel="category tag">Ensemble / Hybrid Machine Learning Models</a></span>
-                                        <div class="entry-content">
+
                                             <p>In applied mathematics, statistics and machine learning, hybrid and ensemble learning techniques are used to combine the predictions of multiple classifiers to produce a single classifier.
                                                Ensembles aim to reduce the generalisation error and have notably better results when there is a significant diversity among the models.
                                             </p>
-                                        </div>
-                                    </div>
+
+
+                                        <h5 class="entry-title"></br><b>Academic profiles</b></h5>
+                                        <span class="cat-links">
+                                                <a href="https://github.com/jaworra" rel="category tag">GitHub</a>, 
+                                                <a href="https://hub.docker.com/u/jaworra" rel="category tag"> DockerHub</a>,
+                                                <a a class="isDisabled" rel="category tag"> Google </a>,
+                                                <a a class="isDisabled" rel="category tag"> arXiv</a>, 
+                                                <a a class="isDisabled" rel="category tag"> ORCID</a> 
+                                            </span>
+                                        <div class="entry-content">
+    
+
+
+                                    
+                                </div>
 
                             </article>
                             <!-- #post-## -->
