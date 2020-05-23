@@ -174,7 +174,7 @@
                                         <p>4. Some convergence proof</p>
                                         <p>5. Cauchy sequences</p>
                                         <p>6. Limits and delta epsilon</p>
-                                        <p>7. Continuos and uniformly continuos functions</p>
+                                        <p>7. Continuos and uniformly continuous functions</p>
                                         <p>8. Differentiation functions</p>
                                         <p>9. Zeno's parados and Dirichlets Test</p>
                                         <p>10. Multivariate limits and pointwise convergence</p>
@@ -231,6 +231,27 @@
                                         $$ {  = \epsilon \text{ &#x220E }  }$$ 
 
 
+                                        </br><hr width="50%" size="8" align="center">
+                                        <p><strong>Continuous Functions</strong></p>
+                                        $$ { \text{ Consider f : }  \mathbb{R}  {\rightarrow}  \mathbb{R} \text{ defined by } }$$
+                                        $$ { f(x) = \begin{cases} 1,  & \text{if $x$ is rational} \\ 0, & \text{if $x$ is irrational} \end{cases} }$$  
+                                        $$ { \text{ Prove f is not continuous anywhere.  } \scriptstyle \text{ *also known as Dirichlet function} }$$
+
+                                        <p>Proof</p>
+                                        $$ { \text{ Spse. f is continuous at a.}  }$$ 
+                                        $$ { \text{  Set } \epsilon = 1 \text{. Then } \exists   f\ \gt 0 \text{ s.t }\forall x  \in  \mathbb{R}
+                                        \text{ with  } |x-a|  \lt f\ \text{, we have } \left| a - f\ , a + f\ \right| \lt 1. }$$
+                                        $$ { \text{If a is rational then f(a)} = 1.  \text{ By the density of the irrationals, pick }  x  \in  \left( a - f\ , a + f\ \right) \text{, so f(x) = 0,} }$$ 
+                                        $$ { \text{ hence  } \left| a - f\ , a + f\ \right|  \lt 1 }$$ 
+                                        $$ {  \left| 0 - 1 \right| \lt 1 }$$ 
+                                        $$ {  \left| - 1 \right| \lt 1 }$$ 
+                                        $$ {   - 1 \lt 1  \text{  }  \Rightarrow \Leftarrow	   }$$  <!-- contradiction symbol, \unicode{x21af} -->
+
+                                        $$ { \text{If a is irrational then f(a)} = 0.  \text{ By the density of the rationals pick }  x  \in  \left( a - f\ , a + f\ \right) \text{, so f(x) = 1.} }$$ 
+                                        $$ { \text{ Hence  } \left| a - f\ , a + f\ \right|  \lt 1 }$$ 
+                                        $$ {  \left| 1 - o \right| \lt 1 }$$ 
+                                        $$ {  \left| 1 \right| \lt 1 }$$ 
+                                        $$ {    1 \lt 1  \text{  }  \Rightarrow \Leftarrow	   }$$  <!-- contradiction symbol, \unicode{x21af} -->
                                         </div>
                                         <!-- .entry-content -->
                                     </div>
