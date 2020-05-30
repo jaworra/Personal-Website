@@ -213,21 +213,21 @@
                                         <p>Limit definition</p>
                                         $$ { \text{ Recall, }     \lim_{x \to c} f(x) = L, \text{ means }   }$$           
                                         
-                                        $$ { \forall \epsilon \gt 0  , \exists   f\ \gt 0 \text{ s.t }\forall x  \in  \mathbb{R} \text{ with  } 0 \lt |x-c|  \lt f\  }$$  
+                                        $$ { \forall \epsilon \gt 0  , \exists   \delta \gt 0 \text{ s.t }\forall x  \in  \mathbb{R} \text{ with  } 0 \lt |x-c|  \lt \delta  }$$  
                                         $$ { \text{ we have  }  \left| f(x)-L \right|  \lt \epsilon  }$$ 
                                         
                                         <p>Scratch work</p>
-                                        $$ {  \epsilon \gt 0 \text{ we need  } f\ }$$ 
-                                        $$ { 0 \lt |x-2|  \lt f\  \Rightarrow \left| (x-2)^7 . cos \left( \frac {2}{x-2} \right) \right| =0  }$$ 
+                                        $$ {  \epsilon \gt 0 \text{ we need  } \delta }$$ 
+                                        $$ { 0 \lt |x-2|  \lt \delta  \Rightarrow \left| (x-2)^7 . cos \left( \frac {2}{x-2} \right) \right| =0  }$$ 
                                         $$ { |(x-2)|^7  . \left| cos \left( \frac {2}{x-2} \right) \right| \leq \left|(x-2)\right| ^7 . 1 \lt  \epsilon  }$$ 
-                                        $$ {  \lt f\ ^7 \lt  \epsilon  }$$ 
-                                        $$ {  f\ =  \sqrt[7]\epsilon }$$ 
+                                        $$ {  \lt \delta ^7 \lt  \epsilon  }$$ 
+                                        $$ {  \delta =  \sqrt[7]\epsilon }$$ 
 
                                         <p>Proof</p>
-                                        $$ {  \epsilon \gt 0. \text{ Choose } f\ =  \sqrt[7]\epsilon \text{ .Then } \forall x  \in  \mathbb{R}  \text{with}   }$$ 
-                                        $$ { 0 \lt |x-2|  \lt f\ \text{, we have }  }$$ 
+                                        $$ {  \epsilon \gt 0. \text{ Choose } \delta =  \sqrt[7]\epsilon \text{ .Then } \forall x  \in  \mathbb{R}  \text{with}   }$$ 
+                                        $$ { 0 \lt |x-2|  \lt \delta \text{, we have }  }$$ 
                                         $$ {  \left| (x-2)^7 . cos \left( \frac {2}{x-2} \right) - 0 \right| = | \left(x-2)\right|^7 . \left|cos \left( \frac {2}{x-2} \right)\right| }$$ 
-                                        $$ { \leq |(x-2)|^7 \lt f\ ^7 = \left( \sqrt[7]\epsilon \right)^7 }$$ 
+                                        $$ { \leq |(x-2)|^7 \lt \delta ^7 = \left( \sqrt[7]\epsilon \right)^7 }$$ 
                                         $$ {  = \epsilon \text{ &#x220E }  }$$ 
 
 
@@ -239,15 +239,17 @@
 
                                         <p>Proof</p>
                                         $$ { \text{ Spse. f is continuous at a.}  }$$ 
-                                        $$ { \text{  Set } \epsilon = 1 \text{. Then } \exists   f\ \gt 0 \text{ s.t }\forall x  \in  \mathbb{R}
-                                        \text{ with  } |x-a|  \lt f\ \text{, we have } \left| a - f\ , a + f\ \right| \lt 1. }$$
-                                        $$ { \text{If a is rational then f(a)} = 1.  \text{ By the density of the irrationals, pick }  x  \in  \left( a - f\ , a + f\ \right) \text{, so f(x) = 0,} }$$ 
+                                        $$ { \text{  Set } \epsilon = 1 \text{. Then } \exists   \delta  \gt 0 \text{ s.t }\forall x  \in  \mathbb{R}
+                                        \text{ with  } |x-a|  \lt \delta  \text{, we have } \left| f(x) - f(a)\right| \lt 1. }$$
+                                        $$ { \text{If a is rational then f(a)} = 1. } $$
+                                        $$ { \text{ By the density of the irrationals, pick }  x  \in  \left( a - f\ , a + f\ \right) \text{, so f(x) = 0,} }$$ 
                                         $$ { \text{ hence  } \left| a - f\ , a + f\ \right|  \lt 1 }$$ 
                                         $$ {  \left| 0 - 1 \right| \lt 1 }$$ 
                                         $$ {  \left| - 1 \right| \lt 1 }$$ 
                                         $$ {   - 1 \lt 1  \text{  }  \Rightarrow \Leftarrow	   }$$  <!-- contradiction symbol, \unicode{x21af} -->
 
-                                        $$ { \text{If a is irrational then f(a)} = 0.  \text{ By the density of the rationals pick }  x  \in  \left( a - f\ , a + f\ \right) \text{, so f(x) = 1.} }$$ 
+                                        $$ { \text{If a is irrational then f(a)} = 0. }$$
+                                        $$ { \text{ By the density of the rationals pick }  x  \in  \left( a - f\ , a + f\ \right) \text{, so f(x) = 1.} }$$ 
                                         $$ { \text{ Hence  } \left| a - f\ , a + f\ \right|  \lt 1 }$$ 
                                         $$ {  \left| 1 - o \right| \lt 1 }$$ 
                                         $$ {  \left| 1 \right| \lt 1 }$$ 
