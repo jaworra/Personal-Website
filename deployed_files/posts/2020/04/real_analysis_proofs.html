@@ -232,7 +232,7 @@
 
 
                                         </br><hr width="50%" size="8" align="center">
-                                        <p><strong>Continuous Functions</strong></p>
+                                        <p><strong>Continuous functions</strong></p>
                                         $$ { \text{ Consider f : }  \mathbb{R}  {\rightarrow}  \mathbb{R} \text{ defined by } }$$
                                         $$ { f(x) = \begin{cases} 1,  & \text{if $x$ is rational} \\ 0, & \text{if $x$ is irrational} \end{cases} }$$  
                                         $$ { \text{ Prove f is not continuous anywhere or is a Dirichlet function }}$$
@@ -254,6 +254,32 @@
                                         $$ {  \left| 1 - o \right| \lt 1 }$$ 
                                         $$ {  \left| 1 \right| \lt 1 }$$ 
                                         $$ {    1 \lt 1  \text{  }  \Rightarrow \Leftarrow	   }$$  <!-- contradiction symbol, \unicode{x21af} -->
+
+
+
+                                        </br><hr width="50%" size="8" align="center">
+                                        <p><strong>Uniformly continuous functions</strong></p>
+                                        
+                                        $$ { \text{ Prove } f(x) = x^2  \text{ is uniformly continuous on } (0,1) }$$ 
+
+                                        <p>Recall</p>
+                                        $$ { \text{ f is uni cont. on }  (0,1)   \text{ if } \forall \epsilon \gt 0  , \exists   \delta \gt 0 \text{ s.t }}$$  
+                                        $$ { \forall x,y \in  (0,1)  \text{ with  } |x-y|  \lt  \delta \Rightarrow |f(x)-f(y)| \lt \epsilon }$$
+
+                                        <p>Scratch work</p>
+                                        $$ { \text{ we need  } \delta  \text{  s.t  }|x^2-y^2| \lt \epsilon  }$$ 
+                                        $$ { |x^2-y^2| = |x-y| |x+y| }$$ 
+                                        $$ { \lt |x-y| . 2  \lt 2 \delta \lt \epsilon }$$ 
+                                        $$ { \delta = \epsilon/2 }$$ 
+
+
+                                        <p>Proof</p>
+                                        $$ { \text{ Let }  \epsilon \gt 0. \text{ Choose } \delta = \epsilon/2  }$$                                        
+                                        $$ { \text{ Then }  \forall x,y \in  (0,1)  \text{ with  } |x-y|  \lt  \delta  }$$ 
+                                        $$ { \text{ We have } |x^2-y^2| = |x-y| |x+y|  }$$
+                                        $$ {  \lt   2 \delta =  2 \delta  =  2 (\epsilon/2) }$$
+                                        $$ {  =  \epsilon  \text{ &#x220E } }$$
+
                                         </div>
                                         <!-- .entry-content -->
                                     </div>
