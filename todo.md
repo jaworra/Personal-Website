@@ -13,6 +13,7 @@
 * [ ] update banner signal to include a smoothed average.
 * [ ] banner needs to be less impactful - takes away from contents
 * [ ] interactive map - places travel
+* [x] Mobile friendly
 * [x] latex library for markup
 * [x] int, build
 
@@ -24,7 +25,7 @@
 
 ## Cloud Computing - Backend
 
-* [ ] static to dynamic website (lambda&gateway) orÂ vpc/ec2/wfs application and application load balancing.
+* [ ] static to dynamic website (lambda&gateway) or vpc/ec2/wfs application and application load balancing.
 * [x] SEO
 * [x] fix cnames (www and domain -> routes to https site) \* Most important ticket
 * [x] cloudfront and route53 for security, scalability and high availability

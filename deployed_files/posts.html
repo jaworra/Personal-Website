@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en-AU">
-
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
         <title>MESS Analytics &#8211; Mathematics, Spatial and Statistic and in Economics.</title>
 
         <!-- favicon -->
@@ -13,346 +13,353 @@
         <link rel="icon" type="image/png" sizes="16x16" href="lib/img/logo/favicon-16x16.png">
         <link rel="manifest" href="lib/img/logo/site.webmanifest">
 
-    
         <link rel='stylesheet' id='bootstrap-css' href='lib/third-party/bootstrap.min.css?ver=4.8.9' type='text/css' media='all' />
         <link rel='stylesheet' id='meanmenu-css' href='lib/third-party/meanmenu.css?ver=4.8.9' type='text/css' media='all' />
+                
         <link rel='stylesheet' id='font-awesome-css' href='lib/font-awesome/css/font-awesome.min.css?ver=4.8.9' type='text/css' media='all' />
         <link rel='stylesheet' id='blog-way-fonts-css' href='lib/css/latin.css' type='text/css' media='all' />
         <link rel='stylesheet' id='blog-way-style-css' href='lib/css/style.css?ver=4.8.9' type='text/css' media='all' />
-    
-    <style>
-        body {
-            color: #404040;
-        }
-        
-        .site-title a {
-            color: #222222;
-        }
-        
-        .site-description {
-            color: #818181;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        .entry-header h2.entry-title a {
-            color: #404040;
-        }
-        
-        #primary .cat-links a {
-            color: #ea9920;
-        }
-        
-        .content-area a {
-            color: #ea9920;
-        }
-        
-        header#masthead {
-            background: #202020;
-        }
-        
-        .main-navigation ul li a {
-            color: #ffffff;
-        }
-        
-        #masthead .main-navigation li.current-menu-item a,
-        .main-navigation ul.menu li:hover a {
-            color: #afafaf;
-        }
-        
-        .widget .widget-title {
-            background: #ffffff;
-        }
-        
-        .site-footer,
-        .footer-social .menu-social-menu-container #menu-social-menu {
-            background: #202020;
-        }
-        
-        .site-info,
-        .site-info a {
-            color: #787878;
-        }
-        
-        button,
-        input[type="button"],
-        input[type="reset"],
-        input[type="submit"],
-        .nav-links .nav-previous a,
-        .nav-links .nav-next a,
-        .nav-links .page-numbers,
-        .pagination .page-numbers.next,
-        .pagination .page-numbers.previous {
-            border: 1px solid #202020;
-            background: #202020;
-        }
-        
-        .scrollup {
-            background-color: #ea9920;
-        }
-    </style>
+                
+        <!-- Menu for phone devices-->
+        <script type='text/javascript' src='lib/js/jquery/jquery.js?ver=1.12.4'></script>
+        <script type='text/javascript' src='lib/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+        <script type='text/javascript' src='lib/third-party/jquery.meanmenu.js'></script>
+        <!-- scroll up  -->
+        <script type='text/javascript' src='lib/js/custom.js?ver=20161202'></script>
 
-    <style type="text/css">
-        .recentcomments a {
-            display: inline !important;
-            padding: 0 !important;
-            margin: 0 !important;
-        }
-    </style>
+        <style>
+            body {
+                color: #404040;
+            }
+            
+            .site-title a {
+                color: #222222;
+            }
+            
+            .site-description {
+                color: #818181;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            .entry-header h2.entry-title a {
+                color: #404040;
+            }
+            
+            #primary .cat-links a {
+                color: #ea9920;
+            }
+            
+            .content-area a {
+                color: #ea9920;
+            }
+            
+            header#masthead {
+                background: #202020;
+            }
+            
+            .main-navigation ul li a {
+                color: #ffffff;
+            }
+            
+            #masthead .main-navigation li.current-menu-item a,
+            .main-navigation ul.menu li:hover a {
+                color: #afafaf;
+            }
+            
+            .widget .widget-title {
+                background: #ffffff;
+            }
+            
+            .site-footer,
+            .footer-social .menu-social-menu-container #menu-social-menu {
+                background: #202020;
+            }
+            
+            .site-info,
+            .site-info a {
+                color: #787878;
+            }
+            
+            button,
+            input[type="button"],
+            input[type="reset"],
+            input[type="submit"],
+            .nav-links .nav-previous a,
+            .nav-links .nav-next a,
+            .nav-links .page-numbers,
+            .pagination .page-numbers.next,
+            .pagination .page-numbers.previous {
+                border: 1px solid #202020;
+                background: #202020;
+            }
+            
+            .scrollup {
+                background-color: #ea9920;
+            }
+        </style>
 
-    <!-- banner dimensions  -->
-    <style type="text/css">
-        canvas {
-            width: 100%;
-            /* height: 100%; */
-        }
-    </style>
-   <!--  <link rel="stylesheet" href="styles.css">   take this out for no triangulation-->
-</head>
+        <style type="text/css">
+            .recentcomments a {
+                display: inline !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        </style>
+
+        <!-- banner dimensions  -->
+        <style type="text/css">
+            canvas {
+                width: 100%;
+                /* height: 100%; */
+            }
+        </style>
+        <!--  <link rel="stylesheet" href="styles.css">   take this out for no triangulation-->
+    </head>
 
 <body class="home blog hfeed sticky-top">
-    <div id="page" class="site">
-        <header id="masthead" class="site-header navbar-fixed-top" role="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <nav id="site-navigation" class="main-navigation" role="navigation">
-                            <div class="menu-catergories-container">
-                                <ul id="primary-menu" class="menu">
-                                    <li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a href="index.html">Home</a></li>
-                                    <li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="research.html">Research</a></li>
-                                    <li id="menu-item-54" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="services.html">Services</a></li>
-                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="downloads.html">Downloads</a></li>
-                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="contacts.html">Contact</a></li>
-                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="personal.html">Personal</a></li>
-                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="posts.html">Posts</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-                <!-- .row -->
-            </div>
-            <!-- .container -->
-        </header>
-        <!-- #masthead -->
-        <div class="main-banner banner-disabled">
-            <div class="container">
-                <div class="row">
-                    <div class="site-branding">
-                        <h1 class="site-title"><a href="posts.html" rel="home">MESS Analytics</a></h1>
-                        <p class="site-description">Blog on Mathematics, Economics, Spatial and Statistic </p>
-                    </div>
-                    <!-- .site-branding -->
-                </div>
-            </div>
-        </div>
-        <!-- .main-banner -->
-        <div id="content" class="site-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12 layout-right-sidebar">
-                        <div id="primary" class="content-area">
-                            <main id="main" class="site-main" role="main">
-                                <!-- start to posts -->
-                                <!-- #post-5## -->                              
-                                <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
-                                    <div class="detail-wrap">
-                                        <header class="entry-header">
-                                            <span class="cat-links"> <a href="" rel="category tag">Statistics</a></span>
-                                            <h2 class="entry-title"><a href="" rel="bookmark">Probabilistic Graphical Models</a></h2> </header>
-                                        <!-- .entry-header -->
-                                        <!-- Image -->
-                                        <div class="entry-img">
-                                            <a href=""><img src="https://imgs.xkcd.com/comics/na.png" /></a>
-                                        </div>
-                                        <div class="entry-content">
-                                            <p>The intention of using graphs is to represent the complex data abstractly, determining strength and direction of relationship between objects.
-                                               Probabilistic Graphical Models (PGM) are mathematical structures bring together graph and probability theory as a powerful flexible framework to model complex
-                                               large collections of random variables with complex interactions. There are many fields and numerous applications that through construction of PGM have supported
-                                               making predictions and decision making under uncertainty.  
-                                            </p>
-                                            <p>*UNDER CONSTRUCTION*</p>
-                                            <a href=" " class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-                                </article>               
-
-
-                                <!-- #post-4## -->
-                                <article id="post-33" class="post-33 post type-post status-publish format-standard hentry category-mathematics category-statistics">
-                                    <div class="detail-wrap">
-                                        <header class="entry-header">
-                                            <span class="cat-links"> <a href="" rel="category tag">Programming</a></span>
-                                            <h2 class="entry-title"><a href="posts/2020/05/sysops_aws_exam.html" rel="bookmark">SysOps Administrator Exam</a></h2>
-                                        </header>
-                                        <!-- Image -->
-                                        <div class="entry-img">
-                                            <a href="posts/2020/05/sysops_aws_exam.html"><img width="345" height="300" src="posts/2020/05/logo.jpg" /></a>
-                                        </div>     
-                                        <div class="entry-content">
-                                            <p>Having completed a cloud computing pilot project (over two years) and having project expirence in development and deployment on the AWS, I am very keen to learn in a more structured approach and fill missing knowledge gaps.
-                                               I have completed the Developer associate exam and now attempting the SysOps Administrator in preparation for the DevOps professional. 
-                                            </p>
-
-                                            <a href="posts/2020/05/sysops_aws_exam.html" class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
-
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-                                </article> 
-                                
-                                <!-- #post-3## -->
-                                <article id="post-33" class="post-33 post type-post status-publish format-standard hentry category-mathematics category-statistics">
-                                    <div class="detail-wrap">
-                                        <header class="entry-header">
-                                            <span class="cat-links"> <a href="" rel="category tag">Mathematics</a></span>
-                                            <h2 class="entry-title"><a href="posts/2020/04/real_analysis_proofs.html" rel="bookmark">Real Analysis</a></h2>
-                                        </header>
-                                        <!-- Image -->
-                                        <div class="entry-img">
-                                            <a href="posts/2020/04/real_analysis_proofs.html"><img width="745" height="300" src="https://imgs.xkcd.com/comics/proofs.png" /></a>
-                                        </div> 
-
-                                        <div class="entry-content">
-                                        </br></br></br></br></br></br></br></br></br><p> Some interesting real analysis proofs. </p>
-
-                                            <a href="pposts/2020/04/real_analysis_proofs.html" class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
-
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-                                </article>                
-
-                            
-                                 <!-- #post-2##  -->
-                                <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
-                                    <div class="detail-wrap">
-                                        <header class="entry-header">
-                                            <span class="cat-links"> <a href="" rel="category tag">Statistics</a></span>
-                                            <h2 class="entry-title"><a href="posts/2017/10/fitting_linear_regression_models_part2.html" rel="bookmark">Fitting Linear Regression Part 2</a></h2> </header>
-                                        <!-- .entry-header -->
-                                        <!-- Image -->
-                                        <div class="entry-img">
-                                            <a href="posts/2017/10/fitting_linear_regression_models_part2.html"><img width="345" height="225" src="https://imgs.xkcd.com/comics/matrix_transform.png" /></a>
-                                        </div>
-                                        <div class="entry-content">
-                                            <p>Part One we looked at selecting of regressors through a number of criteria and the process that may be adopted. Part Two will focus on Residual Analysis, Diagnostic Check and Multicollinearity Model Adequacy: Residual Analysis In determining a linear model the usual assumption in the specification are not always guaranteed. For least squares the estimation of parameters as well as prediction&hellip;</p>
-
-                                            <a href="posts/2017/10/fitting_linear_regression_models_part2.html" class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
-
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-                                </article>
-
-                                <!-- #post-1## -->
-                                <article id="post-42" class="post-42 post type-post status-publish format-standard has-post-thumbnail hentry category-mathematics category-statistics tag-linear-regression tag-statistics">
-
-                                    <div class="detail-wrap">
-                                        <header class="entry-header">
-                                            <span class="cat-links"> <a href="" rel="category tag">Statistics</a></span>
-                                            <h2 class="entry-title"><a href="posts/2017/07/fitting_linear_regression_models.html" rel="bookmark">Fitting Linear Regression Models</a></h2> </header>
-                                        <!-- Image -->
-                                        <div class="entry-img">
-                                            <a href="posts/2017/07/fitting_linear_regression_models.html"><img width="345" height="225" src="https://imgs.xkcd.com/comics/linear_regression.png" /></a>
-                                        </div>
-                                        <div class="entry-content">
-                                            <p>Model Selection and Checking To determine the &#8216;best&#8217; regression equation from a multiple regression model that involves k regressors, X1,X2,X3 &#8230; Xk, there exist contradictory criteria. We should include as many regressors as possible to be useful. We should exclude as many regressors to save cost in collecting data. SELECTING CRITERIA Selecting the best regression model (essential regressors) is reasonable compromise&hellip;</p>
-
-                                            <a href="posts/2017/07/fitting_linear_regression_models.html" class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
-
-                                        </div>
-                                        <!-- .entry-content -->
-                                    </div>
-
-                                </article>
-                                <!-- #post-## robabilistic graphical models are a powerful framework for representing complex domains using probability distributions, with numerous applications in machine learning, computer vision, natural language processing and computational biology. Graphical models bring together graph theory and probability theory, and provide a flexible framework for modeling large collections of random variables with complex interactions.-->
-
-                            </main>
-                            <!-- #main -->
+<div id="page" class="site">
+    <header id="masthead" class="site-header navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                        <div class="menu-catergories-container">
+                            <ul id="primary-menu" class="menu">
+                                <li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a href="index.html">Home</a></li>
+                                <li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="research.html">Research</a></li>
+                                <li id="menu-item-54" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="services.html">Services</a></li>
+                                <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="downloads.html">Downloads</a></li>
+                                <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="contacts.html">Contact</a></li>
+                                <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="personal.html">Personal</a></li>
+                                <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="posts.html">Posts</a></li>
+                            </ul>
                         </div>
-                        <!-- #primary -->
-                    </div>
-                    <!-- .col-md-8 -->
-                    <div class="col-md-4 col-sm-12">
-                        <aside id="secondary" class="widget-area" role="complementary">
-
-                            <section id="search-2" class="widget widget_search">
-                                <form role="search" method="get" class="search-form" action="">
-                                    <label>
-                                        <span class="screen-reader-text">Search for:</span>
-                                        <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
-                                    </label>
-                                    <input type="submit" class="search-submit" value="Search" />
-                                </form>
-                            </section>
-                            <section id="recent-posts-2" class="widget widget_recent_entries">
-                                <h2 class="widget-title">Recent Posts</h2>
-                                <ul>
-                                    <li>
-                                        <a href="posts/2020/05/sysops_aws_exam.html">SysOps Administrator Exam</a>
-                                    </li>
-                                    <li>
-                                        <a href="posts/2020/04/real_analysis_proofs.html">Real Analysis</a>
-                                    </li>
-
-                                </ul>
-                            </section>
-                            <section id="recent-comments-2" class="widget widget_recent_comments">
-                                <h2 class="widget-title">Recent Comments</h2>
-                                <ul id="recentcomments">
-                                    <li class="recentcomments"><span class="comment-author-link"><a href='' rel='external nofollow' class='url'>geometry dash</a></span> on <a href="">First Post</a></li>
-                                </ul>
-                            </section>
-                            <section id="archives-2" class="widget widget_archive">
-                                <h2 class="widget-title">Archives</h2>
-                                <ul>
-                                    <li><a href=''>October 2017</a></li>
-                                    <li><a href=''>July 2017</a></li>
-                                </ul>
-                            </section>
-                            <section id="categories-2" class="widget widget_categories">
-                                <h2 class="widget-title">Categories</h2>
-                                <ul>
-                                    <li class="cat-item cat-item-4"><a href="">Economics</a>
-                                    </li>
-                                    <li class="cat-item cat-item-3"><a href="">Mathematics</a>
-                                    </li>
-                                    <li class="cat-item cat-item-5"><a href="">Spatial</a>
-                                    </li>
-                                    <li class="cat-item cat-item-2"><a href="">Statistics</a>
-                                    </li>
-                                </ul>
-                            </section>
-                        </aside>
-                        <!-- #secondary -->
-                    </div>
+                    </nav>
                 </div>
-                <!-- .row -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </header>
+    <!-- #masthead -->
+    <div class="main-banner banner-disabled">
+        <div class="container">
+            <div class="row">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="posts.html" rel="home">MESS Analytics</a></h1>
+                    <p class="site-description">Blog on Mathematics, Economics, Spatial and Statistic </p>
+                </div>
+                <!-- .site-branding -->
+            </div>
+        </div>
+    </div>
+    <!-- .main-banner -->
+    <div id="content" class="site-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 layout-right-sidebar">
+                    <div id="primary" class="content-area">
+                        <main id="main" class="site-main" role="main">
+                            <!-- start to posts -->
+                            <!-- #post-5## -->                              
+                            <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
+                                <div class="detail-wrap">
+                                    <header class="entry-header">
+                                        <span class="cat-links"> <a href="" rel="category tag">Statistics</a></span>
+                                        <h2 class="entry-title"><a href="" rel="bookmark">Probabilistic Graphical Models</a></h2> </header>
+                                    <!-- .entry-header -->
+                                    <!-- Image -->
+                                    <div class="entry-img">
+                                        <a href=""><img src="https://imgs.xkcd.com/comics/na.png" /></a>
+                                    </div>
+                                    <div class="entry-content">
+                                        <p>The intention of using graphs is to represent the complex data abstractly, determining strength and direction of relationship between objects.
+                                           Probabilistic Graphical Models (PGM) are mathematical structures bring together graph and probability theory as a powerful flexible framework to model complex
+                                           large collections of random variables with complex interactions. There are many fields and numerous applications that through construction of PGM have supported
+                                           making predictions and decision making under uncertainty.  
+                                        </p>
+                                        <p>*UNDER CONSTRUCTION*</p>
+                                        <a href=" " class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
+                                    </div>
+                                    <!-- .entry-content -->
+                                </div>
+                            </article>               
+
+
+                            <!-- #post-4## -->
+                            <article id="post-33" class="post-33 post type-post status-publish format-standard hentry category-mathematics category-statistics">
+                                <div class="detail-wrap">
+                                    <header class="entry-header">
+                                        <span class="cat-links"> <a href="" rel="category tag">Programming</a></span>
+                                        <h2 class="entry-title"><a href="posts/2020/05/sysops_aws_exam.html" rel="bookmark">SysOps Administrator Exam</a></h2>
+                                    </header>
+                                    <!-- Image -->
+                                    <div class="entry-img">
+                                        <a href="posts/2020/05/sysops_aws_exam.html"><img width="345" height="300" src="posts/2020/05/logo.jpg" /></a>
+                                    </div>     
+                                    <div class="entry-content">
+                                        <p>Having completed a cloud computing pilot project (over two years) and having project expirence in development and deployment on the AWS, I am very keen to learn in a more structured approach and fill missing knowledge gaps.
+                                           I have completed the Developer associate exam and now attempting the SysOps Administrator in preparation for the DevOps professional. 
+                                        </p>
+
+                                        <a href="posts/2020/05/sysops_aws_exam.html" class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
+
+                                    </div>
+                                    <!-- .entry-content -->
+                                </div>
+                            </article> 
+                            
+                            <!-- #post-3## -->
+                            <article id="post-33" class="post-33 post type-post status-publish format-standard hentry category-mathematics category-statistics">
+                                <div class="detail-wrap">
+                                    <header class="entry-header">
+                                        <span class="cat-links"> <a href="" rel="category tag">Mathematics</a></span>
+                                        <h2 class="entry-title"><a href="posts/2020/04/real_analysis_proofs.html" rel="bookmark">Real Analysis</a></h2>
+                                    </header>
+                                    <!-- Image -->
+                                    <div class="entry-img">
+                                        <a href="posts/2020/04/real_analysis_proofs.html"><img width="745" height="300" src="https://imgs.xkcd.com/comics/proofs.png" /></a>
+                                    </div> 
+
+                                    <div class="entry-content">
+                                    </br></br></br></br></br></br></br></br></br><p> Some interesting real analysis proofs. </p>
+
+                                        <a href="pposts/2020/04/real_analysis_proofs.html" class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
+
+                                    </div>
+                                    <!-- .entry-content -->
+                                </div>
+                            </article>                
+
+                        
+                             <!-- #post-2##  -->
+                            <article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-mathematics category-statistics">
+                                <div class="detail-wrap">
+                                    <header class="entry-header">
+                                        <span class="cat-links"> <a href="" rel="category tag">Statistics</a></span>
+                                        <h2 class="entry-title"><a href="posts/2017/10/fitting_linear_regression_models_part2.html" rel="bookmark">Fitting Linear Regression Part 2</a></h2> </header>
+                                    <!-- .entry-header -->
+                                    <!-- Image -->
+                                    <div class="entry-img">
+                                        <a href="posts/2017/10/fitting_linear_regression_models_part2.html"><img width="345" height="225" src="https://imgs.xkcd.com/comics/matrix_transform.png" /></a>
+                                    </div>
+                                    <div class="entry-content">
+                                        <p>Part One we looked at selecting of regressors through a number of criteria and the process that may be adopted. Part Two will focus on Residual Analysis, Diagnostic Check and Multicollinearity Model Adequacy: Residual Analysis In determining a linear model the usual assumption in the specification are not always guaranteed. For least squares the estimation of parameters as well as prediction&hellip;</p>
+
+                                        <a href="posts/2017/10/fitting_linear_regression_models_part2.html" class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
+
+                                    </div>
+                                    <!-- .entry-content -->
+                                </div>
+                            </article>
+
+                            <!-- #post-1## -->
+                            <article id="post-42" class="post-42 post type-post status-publish format-standard has-post-thumbnail hentry category-mathematics category-statistics tag-linear-regression tag-statistics">
+
+                                <div class="detail-wrap">
+                                    <header class="entry-header">
+                                        <span class="cat-links"> <a href="" rel="category tag">Statistics</a></span>
+                                        <h2 class="entry-title"><a href="posts/2017/07/fitting_linear_regression_models.html" rel="bookmark">Fitting Linear Regression Models</a></h2> </header>
+                                    <!-- Image -->
+                                    <div class="entry-img">
+                                        <a href="posts/2017/07/fitting_linear_regression_models.html"><img width="345" height="225" src="https://imgs.xkcd.com/comics/linear_regression.png" /></a>
+                                    </div>
+                                    <div class="entry-content">
+                                        <p>Model Selection and Checking To determine the &#8216;best&#8217; regression equation from a multiple regression model that involves k regressors, X1,X2,X3 &#8230; Xk, there exist contradictory criteria. We should include as many regressors as possible to be useful. We should exclude as many regressors to save cost in collecting data. SELECTING CRITERIA Selecting the best regression model (essential regressors) is reasonable compromise&hellip;</p>
+
+                                        <a href="posts/2017/07/fitting_linear_regression_models.html" class="btn-continue">Continue Reading<span class="arrow-continue">&rarr;</span></a>
+
+                                    </div>
+                                    <!-- .entry-content -->
+                                </div>
+
+                            </article>
+                            <!-- #post-## robabilistic graphical models are a powerful framework for representing complex domains using probability distributions, with numerous applications in machine learning, computer vision, natural language processing and computational biology. Graphical models bring together graph theory and probability theory, and provide a flexible framework for modeling large collections of random variables with complex interactions.-->
+
+                        </main>
+                        <!-- #main -->
+                    </div>
+                    <!-- #primary -->
+                </div>
+                <!-- .col-md-8 -->
+                <div class="col-md-4 col-sm-12">
+                    <aside id="secondary" class="widget-area" role="complementary">
+
+                        <section id="search-2" class="widget widget_search">
+                            <form role="search" method="get" class="search-form" action="">
+                                <label>
+                                    <span class="screen-reader-text">Search for:</span>
+                                    <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+                                </label>
+                                <input type="submit" class="search-submit" value="Search" />
+                            </form>
+                        </section>
+                        <section id="recent-posts-2" class="widget widget_recent_entries">
+                            <h2 class="widget-title">Recent Posts</h2>
+                            <ul>
+                                <li>
+                                    <a href="posts/2020/05/sysops_aws_exam.html">SysOps Administrator Exam</a>
+                                </li>
+                                <li>
+                                    <a href="posts/2020/04/real_analysis_proofs.html">Real Analysis</a>
+                                </li>
+
+                            </ul>
+                        </section>
+                        <section id="recent-comments-2" class="widget widget_recent_comments">
+                            <h2 class="widget-title">Recent Comments</h2>
+                            <ul id="recentcomments">
+                                <li class="recentcomments"><span class="comment-author-link"><a href='' rel='external nofollow' class='url'>geometry dash</a></span> on <a href="">First Post</a></li>
+                            </ul>
+                        </section>
+                        <section id="archives-2" class="widget widget_archive">
+                            <h2 class="widget-title">Archives</h2>
+                            <ul>
+                                <li><a href=''>October 2017</a></li>
+                                <li><a href=''>July 2017</a></li>
+                            </ul>
+                        </section>
+                        <section id="categories-2" class="widget widget_categories">
+                            <h2 class="widget-title">Categories</h2>
+                            <ul>
+                                <li class="cat-item cat-item-4"><a href="">Economics</a>
+                                </li>
+                                <li class="cat-item cat-item-3"><a href="">Mathematics</a>
+                                </li>
+                                <li class="cat-item cat-item-5"><a href="">Spatial</a>
+                                </li>
+                                <li class="cat-item cat-item-2"><a href="">Statistics</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </aside>
+                    <!-- #secondary -->
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- #content -->
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info">
+            <div class="container">
             </div>
             <!-- .container -->
         </div>
-        <!-- #content -->
-        <footer id="colophon" class="site-footer" role="contentinfo">
-            <div class="site-info">
-                <div class="container">
-                </div>
-                <!-- .container -->
-            </div>
-            <!-- .site-info -->
-        </footer>
-        <!-- #colophon -->
+        <!-- .site-info -->
+    </footer>
+    <!-- #colophon -->
 
-    </div>
-    <!-- #page -->
+</div>
+<!-- #page -->
 
-    <a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-angle-up"></i></a>
+<a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-angle-up"></i></a>
 
 
 </body>
