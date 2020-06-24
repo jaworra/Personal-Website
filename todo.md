@@ -7,11 +7,12 @@
 * [x] implement https
 * [x] wordpress template to my custom code, remove dependencies
 
-## npm/libraries and React framework - Frontend
+## Frontend
 
 * [ ] typescript and react components for refresh rendering with banners.
 * [ ] update banner signal to include a smoothed average.
 * [ ] banner needs to be less impactful - takes away from contents
+* [ ] automate calendar in post section
 * [ ] interactive map - places travel
 * [x] Mobile friendly
 * [x] latex library for markup
