@@ -183,7 +183,7 @@
                                         <p>6. Limits and delta epsilon</p>
                                         <p>7. Continuos and uniformly continuous functions</p>
                                         <p>8. Differentiation functions</p>
-                                        <p>9. Zeno's parados and Dirichlets Test</p>
+                                        <p>9. Zeno's paradox and Dirichlets Test</p>
                                         <p>10. Multivariate limits and pointwise convergence</p>
 
                                         </br>
@@ -305,7 +305,35 @@
 
                                         $$ { \text{ Shows where a function is differentiable at a point then it continuous there.  }  }$$
 
-                                        </div>
+
+                                        </br><hr width="50%" size="8" align="center">
+                                        <p><strong>Dirichlet Test</strong></p>
+
+                                        $$ { \text{ Prove }  \sum\limits_{n=1}^{\infty}   \frac {sin(n)}{n} \text{ converges.}} $$ 
+                                        $$ { \text{ Recall, Dirichlet test }  } $$ 
+                                        $$ { \text{ 1. } A_k \searrow  0  \text{ as } k\to\infty }$$ 
+                                        $$ { \text{ 2. }  | \sum\limits_{k=1}^{m} | \leq  m  \text{ for all positive integers m. Have m is constant. } }$$ 
+                                        $$ { \text{ Dirichlet test tells us the infinite sum of the product of } a_k \text{and } b_k \text{ converges, }\Big| \sum\limits_{k=1}^{\infty} a_k b_k \Big| \text{ conv.}}$$ 
+                                        
+
+                                        <p>Proof</p>
+                                        $$ { \text{ set } a_k=1/k \text{ and }  b_k=sin(k) \text{ , Note }a_k=1/k \searrow  0 \text{ as } k\to\infty  }$$ 
+                                        $$ { \text{ Consider  } \sum\limits_{k=1}^{m} sin(k) }$$ 
+                                        $$ { \text{ Recall trig identity,  } 2sin(a)sinb(b)= cos(a-b)-cos(a+b)   }$$ 
+                                        $$ { \text{ Then  } 2sin(1) \sum\limits_{k=1}^{m} sin(k) = \sum\limits_{k=1}^{m}2sin(1)sin(k) }$$ 
+                                        $$ { =  \sum\limits_{k=1}^{m} \Big( cos(1-k)-cos(1+k) \Big) \text{ , As cosine is even } cos(1-k)=cos(-1(1-k)) = cosk(k-1)  }$$ 
+                                        $$ { =  \sum\limits_{k=1}^{m} \Big( cos(k-1)-cos(k+1) \Big) \text{ , inputting k } }$$ 
+
+                                        $$ { = (cos0- \require{cancel}\cancel{cos2})+(cos1-\cancel{cos3})+(\cancel{cos2}-\cancel{cos4})+(\cancel{cos3}-\cancel{cos5})+(\cancel{cos4}-\cancel{cos6})+\cancel{...}}$$ 
+                                        $$ { +\Big(\cancel{cos(m-2)}-cos(m)\Big)+\Big(\cancel{cos(m-1)}-cos(m+1)\Big)   }$$ 
+                                        
+                                        $$ { = 1 +cos1-cos(m)-cos(m+1)  }$$
+                                        $$ { \Big| \sum\limits_{k=1}^{m} \Big| =\Big|  \frac {1 +cos(1)-cos(m)-cos(m+1)}{2sin(1)} \Big| }$$
+                                        $$ { \leq \Big|  \frac {4}{2sin(1)} \Big| = \frac {2}{2sin(1)} = M }$$
+                                        $$ { \text{By Dirichlet's, }  \sum\limits_{n=1}^{\infty} \frac {sin(n)}{n} \text{ conv. &#x220E}  }$$
+
+
+                                    </div>
                                         <!-- .entry-content -->
                                     </div>
                                 </article>
