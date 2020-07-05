@@ -184,7 +184,7 @@
                                         <p>7. Continuos and uniformly continuous functions</p>
                                         <p>8. Differentiation functions</p>
                                         <p>9. Zeno's paradox and Dirichlets Test</p>
-                                        <p>10. Multivariate limits and pointwise convergence</p>
+                                        <p>10. Multivariate limits, pointwise and uniform convergence</p>
 
                                         </br>
 
@@ -333,6 +333,34 @@
                                         $$ { \text{By Dirichlet's, }  \sum\limits_{n=1}^{\infty} \frac {sin(n)}{n} \text{ conv. &#x220E}  }$$
 
 
+                                        </br><hr width="50%" size="8" align="center">
+                                        <p><strong>Sequence uniform convergence</strong></p>
+
+                                        $$ { \text{ Prove the sequence }fn(x)= \frac {x}{1+nx^2} \text{ converges uniformly on } \mathbb{R}  \text{ to 0 }  } $$ 
+                                        $$ { \text{ Recall definition, } fn\to \text{f uniformly on } \mathbb{R} \Leftrightarrow \forall \epsilon \gt 0 
+                                        \exists   N, \in  \mathbb{Z}^+ \text{ s.t }\forall n \gt N , | fn(x) - f(x) | \leq \epsilon } $$ 
+
+                                        
+                                        <p>Scratch work</p>
+                                        $$ {  \epsilon  > 0 ,| fn(x) - 0 | = | \frac {x}{1+nx^2} |,  fn(x) = \frac {x}{1+nx^2}  }$$ 
+                                        $$ { fn'(x) = \frac {1.(1+nx^2)- x.2nx}{(1+nx^2)^2} = \frac {1 - 1+nx^2 }{(1+nx^2)^2}=0 }$$ 
+                                        $$ { 1 - nx^2 = 0 \Rightarrow 1 = nx^2 \text{ ,so } x^2 = \frac {1}{n} \text{ so, } x = \pm \sqrt{\frac {1}{n}} }$$ 
+                                        
+                                        <p>input</p>
+                                        $$ { fn'\left(-2 \sqrt{\frac {1}{n}}\right) = \frac {1- n(-2 \sqrt{\frac {1}{n}})^2}{(1+n(-2 \sqrt{\frac {1}{n}})^2)^2} = \frac {1- n.4 \frac {1}{n}}{(1+n.4.\frac{1}{n})^2} < 0}$$ 
+                                        $$ { fn'\left(2 \sqrt{\frac {1}{n}}\right)  < 0}$$ 
+                                        $$ { fn'(0) = \frac {1-0}{(1+0)^2} > 0}$$ 
+
+                                        $$ {\text{ max at x = } \frac {1}{n} \text{ , } fn'\left(\sqrt{\frac {1}{n}}\right) =\frac {\sqrt{\frac {1}{n}}}{1+n(\sqrt{\frac {1}{n}})^2}=  \frac {\sqrt{\frac {1}{n}}}{1+n{\frac {1}{n}}} =\frac {\sqrt{\frac {1}{n}}}{1+1}
+                                        =  \frac {(\frac {1}{\sqrt{n}})}{2} =  \frac {1}{2 \sqrt{n}} }$$ 
+
+                                        <p>Proof</p>
+                                        $$ { \text{ let } \epsilon > 0 \text{ Chose N >  } \left( \frac {1}{2 \epsilon}\right)^2. \text{ Then } \forall n \gt N, \forall x \in \mathbb{R}  } $$ 
+                                        $$ {  | fn(x) - 0 | = \frac {x}{1+nx^2} = \frac {1}{2 \sqrt{n}} \text{ , since max} \left(\frac {x}{1+nx^2} \right) = \frac {1}{2 \sqrt{n}} } $$ 
+                                        $$ { \text{ Since } n > N > (1 \frac {1}{\epsilon} )^2 \text{ ,so } n = (\frac {1}{\epsilon} )^2 \text{ so, } \sqrt{n}=  \frac {1}{\epsilon}  }$$ 
+                                        $$ { \Rightarrow \epsilon > \frac {1}{2 \sqrt{n}} \text{ , }   \frac {1}{2 \sqrt{n}} < \epsilon  \text{ , Thus } | fn(x) - 0 | \leq   \frac {1}{2 \sqrt{n}} < \epsilon \text{ &#x220E} }$$
+                                        
+                                    
                                     </div>
                                         <!-- .entry-content -->
                                     </div>
