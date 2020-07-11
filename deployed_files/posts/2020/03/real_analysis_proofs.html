@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MESS Analytics &#8211; Mathematics, Spatial and Statistic and in Economics.</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../lib/img/logo/apple-touch-icon.png">
+        <link rel="icon" type="image/`png" sizes="32x32" href="../../../lib/img/logo/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../lib/img/logo/favicon-16x16.png">
+        <link rel="manifest" href="../../../lib/img/logo/site.webmanifest">
+
+        <link rel='stylesheet' id='bootstrap-css' href='../../../lib/third-party/bootstrap.min.css?ver=4.8.9' type='text/css' media='all' />
+        <link rel='stylesheet' id='meanmenu-css' href='../../../lib/third-party/meanmenu.css?ver=4.8.9' type='text/css' media='all' />
+                
+        <link rel='stylesheet' id='font-awesome-css' href='../../../lib/font-awesome/css/font-awesome.min.css?ver=4.8.9' type='text/css' media='all' />
+        <link rel='stylesheet' id='blog-way-fonts-css' href='../../../lib/css/latin.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='blog-way-style-css' href='../../../lib/css/style.css?ver=4.8.9' type='text/css' media='all' />
+                
+        <!-- Menu for phone devices-->
+        <script type='text/javascript' src='../../../lib/js/jquery/jquery.js?ver=1.12.4'></script>
+        <script type='text/javascript' src='../../../lib/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+        <script type='text/javascript' src='../../../lib/third-party/jquery.meanmenu.js'></script>
+        <!-- scroll up  -->
+        <script type='text/javascript' src='../../../lib/js/custom.js?ver=20161202'></script>
+
+    <style>
+        body {
+            color: #404040;
+        }
+        
+        .site-title a {
+            color: #222222;
+        }
+        
+        .site-description {
+            color: #818181;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .entry-header h2.entry-title a {
+            color: #404040;
+        }
+        
+        #primary .cat-links a {
+            color: #ea9920;
+        }
+        
+        .content-area a {
+            color: #ea9920;
+        }
+        
+        header#masthead {
+            background: #202020;
+        }
+        
+        .main-navigation ul li a {
+            color: #ffffff;
+        }
+        
+        #masthead .main-navigation li.current-menu-item a,
+        .main-navigation ul.menu li:hover a {
+            color: #afafaf;
+        }
+        
+        .widget .widget-title {
+            background: #ffffff;
+        }
+        
+        .site-footer,
+        .footer-social .menu-social-menu-container #menu-social-menu {
+            background: #202020;
+        }
+        
+        .site-info,
+        .site-info a {
+            color: #787878;
+        }
+        
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        .nav-links .nav-previous a,
+        .nav-links .nav-next a,
+        .nav-links .page-numbers,
+        .pagination .page-numbers.next,
+        .pagination .page-numbers.previous {
+            border: 1px solid #202020;
+            background: #202020;
+        }
+        
+        .scrollup {
+            background-color: #ea9920;
+        }
+    </style>
+
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <!-- take this out for no triangulation-->
+</head>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+<body class="home blog hfeed sticky-top">
+    <div id="page" class="site">
+        <header id="masthead" class="site-header navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <nav id="site-navigation" class="main-navigation" role="navigation">
+                            <div class="menu-catergories-container">
+                                <ul id="primary-menu" class="menu">
+                                    <li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a href="../../../index.html">Home</a></li>
+                                    <li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="../../../research.html">Research</a></li>
+                                    <li id="menu-item-54" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="../../../services.html">Services</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../downloads.html">Downloads</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../contacts.html">Contact</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../personal.html">Personal</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../posts.html">Posts</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </header>
+        <!-- #masthead -->
+        <div class="main-banner banner-disabled">
+            <div class="container">
+                <div class="row">
+
+                    <div class="site-branding">
+
+                        <h1 class="site-title"><a href="../../../posts.html" rel="home">MESS Analytics</a></h1>
+
+                        <p class="site-description">Blog on Mathematics, Economics, Spatial and Statistic </p>
+                    </div>
+                    <!-- .site-branding -->
+                </div>
+            </div>
+        </div>
+        <!-- .main-banner -->
+        <div id="content" class="site-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 layout-right-sidebar">
+                        <div id="primary" class="content-area">
+                            <main id="main" class="site-main" role="main">
+
+                                <article id="post-42" class="post-42 post type-post status-publish format-standard has-post-thumbnail hentry category-mathematics category-statistics tag-linear-regression tag-statistics">
+                                    <div class="detail-wrap">
+                                        <header class="entry-header">
+                                            <span class="cat-links"> <a href="" rel="category tag">Mathematics</a></span>
+                                            <h1 class="entry-title">Real Analysis Proofs</h1> </header>
+                                       
+
+                                        <div class="entry-content">
+                                             <!-- .entry-header -->
+                                        <p>Some real analysis exercises on:</p>
+                                        <p> &ndash; Triangle Inequality</p>
+                                        <p> &ndash; Archimedean Property</p>
+                                        <p> &ndash; Limit of a sequence is unique and convergence sequence is bounded</p>
+                                        <p> &ndash; Convergence sequence</p>
+                                        </br>
+
+                                        <hr width="50%" size="8" align="center">
+                                        <p><strong>Triangle Inequality</strong></p>
+                                        $$ { \text{ Prove } |a + b| \leq |a| + |b| }$$ 
+
+                                        <p>Proof</p>
+                                        $$ { \text{ Show, } \left( |a| + |b| \right)^2 \geq |a + b|^2 \text{  noting, } \forall x  \in  \mathbb{R} \text{ ,  }  |x|^2  = x^2   }$$  
+                                        
+                                        <p>$${  \forall a,b  \in  \mathbb{R} \text{ ,  } \left( |a| + |b| \right)^2  }$$</p> 
+                                        $${ = |a|^2 + 2.|a|.|b| + |b|^2  }$$
+                                        $${ \geq a^2 + 2.a.b + b^2  }$$
+                                        $${ = (a + b)^2 \Rightarrow  \left|a + b\right|^2 }$$
+                                        $${ \text{ So, } \left( |a| + |b| \right)^2  \geq |a + b|^2  }$$
+                                        $${ \text{ So, }  |a| + |b| \geq |a + b| }$$
+                                        $${  |a + b| \leq |a| + |b| \text{ &#x220E }  }$$
+
+
+                                        </br><hr width="50%" size="8" align="center">
+                                        <p><strong>Archimedean Property </strong></p>
+                                        $$ { \text{For any number c, there exists a natural number n that is greater than c.}  }$$ 
+                                        $$ { \text{ Prove that for every positive number } \varepsilon ,  } $$
+                                        $$ { \text{ there exists a positive integer N such that } \frac {1}{n} \lt  \varepsilon \text{ for all n } \geq N .}$$  
+
+                                        <p>Proof</p>
+                                        $$ { \text{ Let, } \varepsilon > 0 \text{ be any positive number. Note } \frac {1}{\varepsilon} > 0, } $$
+                                        $$ { \text{ So by the A.P.}   , \exists  N \in  \mathbb{N} \text{ s.t } N > \frac {1}{\varepsilon}.\textit{ *Note N derivation is left to reader } } $$  
+
+                                        $$ { \text{ Thus } \varepsilon.N >1 , \text{ so } \varepsilon > \frac {1}{N}.   \text{ then} \forall  n \geq  N, } $$
+                                        $$ { \frac {1}{N} \geq \frac {1}{n}; \text{ that is } \frac {1}{n} \leq \frac {1}{N} < \varepsilon  \text{ &#x220E }  } $$  
+
+                                        </br><hr width="50%" size="8" align="center">
+                                        <p><strong>Limit of a sequence is unique</strong></p>
+                                        $$ { \text{Prove that a sequence is unique, recall } a_n \to L  \text{ , that is } \forall \varepsilon >0  \exists N \in \mathbb{Z}^+ s.t. \forall n > N |a_n - L| < \varepsilon  } $$ 
+                                        <p>Proof</p>
+
+                                        $$ { \text{ Spse. } a_n \to a \text{ and }  a_n \to b \text{ with } a \neq b. } $$
+                                        $$ { \text{ Put } \varepsilon = |a - b| >0  } $$
+
+                                        $$ { \text{ Since }  a_n \to a, \exists N \in \mathbb{Z}^+ s.t. \forall n > N_1, |a_n - a| <  \frac {\varepsilon}{2}.} $$
+                                        $$ { \text{ Since }  a_n \to b, \exists N \in \mathbb{Z}^+ s.t. \forall n > N_2, |a_n - b| <  \frac {\varepsilon}{2}. }$$
+                                        $$ { \text{ Set M = max} (N_1 ,N_2) \text{ Then}   \forall n > M,|a - b| = |a - a_n+a_n -b| }$$
+                                        $$ { \leq |a - a_n| + |a_n -b| }$$ 
+                                        $$ { \le \frac {\varepsilon}{2} +\frac {\varepsilon}{2} = \varepsilon = |a - b|.  }$$ 
+                                        $$ {  \text{ Thus } |a - b| < |a - b|.  \text{ a contradiction} \Rightarrow \Leftarrow	 }$$ 
+
+                                        </br><hr width="50%" size="8" align="center">
+                                        <p><strong> Convergence proof</strong></p>
+                                        $$ { \text{Prove } \lim_{n\to\infty} \frac {n}{n+1} =1 } $$ 
+                                        $$ { \text{Recall } \lim_{n\to\infty} a_n = L \text{ means }  \forall  \varepsilon > 0  N \exists  N \in  \mathbb{Z}^+  \text{ s.t , } \forall n > N , |a_n - L| < \varepsilon   } $$ 
+                                        
+                                        <p>Proof</p>
+                                        $$ { \text{ Let, } \varepsilon > 0 \text{ . Choose } N > \frac {1}{\varepsilon} > 0, } $$
+                                        $$ { \text{ So by the A.P.}   , \exists  N \in  \mathbb{N} \text{ s.t } N > \frac {1}{\varepsilon}.\textit{ *Note N derivation is left to reader } } $$
+
+                                        $$ { \text{ Then } \forall n  > N\varepsilon.N >1 ,  |\frac {n}{n+1} -1 | = |\frac {n}{n+1}  - \frac {n+1}{n+1} | } $$
+                                        $$ {  = |\frac {n - (n+1)}{n+1} | = | \frac {-1}{n+1} | = \frac {1}{n+1} \leq \frac {1}{n}  } $$
+                                        $$ {  \text{ Since } n > N >  \frac {1}{\varepsilon} \text{ therefore }  \frac {\varepsilon.n}{n} > \frac {1}{n} } $$
+                                        $$ { \varepsilon > \frac {1}{n} \text{ So, }  \frac {1}{n} <  \varepsilon  } $$
+                                        $$ {  \text{ Thus, }  | \frac {n}{n+1} - 1 | \leq \frac {1}{n} <  \varepsilon.  &#x220E  } $$
+                                    
+                                    </div>
+                                        <!-- .entry-content -->
+                                    </div>
+                                </article>
+
+                            </main>
+                            <!-- #main -->
+                        </div>
+                        <!-- #primary -->
+                    </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <aside id="secondary" class="widget-area" role="complementary">
+            
+                                        <section id="search-2" class="widget widget_search">
+                                            <form role="search" method="get" class="search-form" action="">
+                                                <label>
+                                                    <span class="screen-reader-text">Search for:</span>
+                                                    <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+                                                </label>
+                                                <input type="submit" class="search-submit" value="Search" />
+                                            </form>
+                                        </section>
+                                        <section id="recent-posts-2" class="widget widget_recent_entries">
+                                            <h2 class="widget-title">Recent Posts</h2>
+                                            <ul>
+                                                <li>
+                                                    <a href="../05/sysops_aws_exam.html">SysOps Administrator Exam</a>
+                                                </li>
+                                                <li>
+                                                    <a href="real_analysis_proofs.html">Real Analysis</a>
+                                                </li>
+            
+                                            </ul>
+                                        </section>
+                                        <section id="recent-comments-2" class="widget widget_recent_comments">
+                                            <h2 class="widget-title">Recent Comments</h2>
+                                            <ul id="recentcomments">
+                                                <li class="recentcomments"><span class="comment-author-link"><a href='' rel='external nofollow' class='url'>geometry dash</a></span> on <a href="/first-post/#comment-2">First Post</a></li>
+                                            </ul>
+                                        </section>
+                                        <section id="archives-2" class="widget widget_archive">
+                                            <h2 class="widget-title">Archives</h2>
+                                            <ul>
+                                                <li><a href='../10/fitting_linear_regression_models_part2.html'>October 2017</a></li>
+                                                <li><a href='../07/fitting_linear_regression_models.html'>July 2017</a></li>
+                                            </ul>
+                                        </section>
+                                        <section id="categories-2" class="widget widget_categories">
+                                            <h2 class="widget-title">Categories</h2>
+                                            <ul>
+                                                <li class="cat-item cat-item-4"><a href="">Economics</a>
+                                                </li>
+                                                <li class="cat-item cat-item-3"><a href="">Mathematics</a>
+                                                </li>
+                                                <li class="cat-item cat-item-5"><a href="">Spatial</a>
+                                                </li>
+                                                <li class="cat-item cat-item-2"><a href="">Statistics</a>
+                                                </li>
+                                            </ul>
+                                        </section>
+            
+                                    </aside>
+                                    <!-- #secondary -->
+                                </div>                            
+
+
+
+                            <!-- #post-## -->    
+                            <nav class="navigation post-navigation" role="navigation">
+                                <h2 class="screen-reader-text">Post navigation</h2>
+                                <div class="nav-links">
+                                    <div class="nav-next"><a href="../04/real_analysis_proofs2.html" rel="next">Real Analysis Part 2</a></div>
+                                </div>
+                            </nav>
+
+                            </main>
+                            <!-- #main -->
+                        </div>
+                        <!-- #primary -->
+                    </div>
+                    <!-- .col-md-8 -->
+                    
+
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- #content -->
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="site-info">
+                <div class="container">
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .site-info -->
+        </footer>
+        <!-- #colophon -->
+
+    </div>
+    <!-- #page -->
+
+    <a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-angle-up"></i></a>
+
+</body>
+
+</html>->
+                    
+
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- #content -->
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="site-info">
+                <div class="container">
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .site-info -->
+        </footer>
+        <!-- #colophon -->
+
+    </div>
+    <!-- #page -->
+
+    <a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-angle-up"></i></a>
+
+</body>
+
+</html>
