@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MESS Analytics &#8211; Mathematics, Spatial and Statistic and in Economics.</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../lib/img/logo/apple-touch-icon.png">
+        <link rel="icon" type="image/`png" sizes="32x32" href="../../../lib/img/logo/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../lib/img/logo/favicon-16x16.png">
+        <link rel="manifest" href="../../../lib/img/logo/site.webmanifest">
+
+        <link rel='stylesheet' id='bootstrap-css' href='../../../lib/third-party/bootstrap.min.css?ver=4.8.9' type='text/css' media='all' />
+        <link rel='stylesheet' id='meanmenu-css' href='../../../lib/third-party/meanmenu.css?ver=4.8.9' type='text/css' media='all' />
+                
+        <link rel='stylesheet' id='font-awesome-css' href='../../../lib/font-awesome/css/font-awesome.min.css?ver=4.8.9' type='text/css' media='all' />
+        <link rel='stylesheet' id='blog-way-fonts-css' href='../../../lib/css/latin.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='blog-way-style-css' href='../../../lib/css/style.css?ver=4.8.9' type='text/css' media='all' />
+                
+        <!-- Menu for phone devices-->
+        <script type='text/javascript' src='../../../lib/js/jquery/jquery.js?ver=1.12.4'></script>
+        <script type='text/javascript' src='../../../lib/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+        <script type='text/javascript' src='../../../lib/third-party/jquery.meanmenu.js'></script>
+        <!-- scroll up  -->
+        <script type='text/javascript' src='../../../lib/js/custom.js?ver=20161202'></script>
+
+
+
+    <style>
+        body {
+            color: #404040;
+        }
+        
+        .site-title a {
+            color: #222222;
+        }
+        
+        .site-description {
+            color: #818181;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .entry-header h2.entry-title a {
+            color: #404040;
+        }
+        
+        #primary .cat-links a {
+            color: #ea9920;
+        }
+        
+        .content-area a {
+            color: #ea9920;
+        }
+        
+        header#masthead {
+            background: #202020;
+        }
+        
+        .main-navigation ul li a {
+            color: #ffffff;
+        }
+        
+        #masthead .main-navigation li.current-menu-item a,
+        .main-navigation ul.menu li:hover a {
+            color: #afafaf;
+        }
+        
+        .widget .widget-title {
+            background: #ffffff;
+        }
+        
+        .site-footer,
+        .footer-social .menu-social-menu-container #menu-social-menu {
+            background: #202020;
+        }
+        
+        .site-info,
+        .site-info a {
+            color: #787878;
+        }
+        
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        .nav-links .nav-previous a,
+        .nav-links .nav-next a,
+        .nav-links .page-numbers,
+        .pagination .page-numbers.next,
+        .pagination .page-numbers.previous {
+            border: 1px solid #202020;
+            background: #202020;
+        }
+        
+        .scrollup {
+            background-color: #ea9920;
+        }
+    </style>
+
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+
+
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <!-- take this out for no triangulation-->
+    <link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-dark-reasonable.min.css' rel='stylesheet'/>    
+    <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js'></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+<body class="home blog hfeed sticky-top">
+    <div id="page" class="site">
+        <header id="masthead" class="site-header navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <nav id="site-navigation" class="main-navigation" role="navigation">
+                            <div class="menu-catergories-container">
+                                <ul id="primary-menu" class="menu">
+                                    <li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a href="../../../index.html">Home</a></li>
+                                    <li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="../../../research.html">Research</a></li>
+                                    <li id="menu-item-54" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="../../../services.html">Services</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../downloads.html">Downloads</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../contacts.html">Contact</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../personal.html">Personal</a></li>
+                                    <li id="menu-item-50" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50"><a href="../../../posts.html">Posts</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </header>
+        <!-- #masthead -->
+        <div class="main-banner banner-disabled">
+            <div class="container">
+                <div class="row">
+
+                    <div class="site-branding">
+
+                        <h1 class="site-title"><a href="../../../posts.html" rel="home">MESS Analytics</a></h1>
+
+                        <p class="site-description">Blog on Mathematics, Economics, Spatial and Statistic </p>
+                    </div>
+                    <!-- .site-branding -->
+                </div>
+            </div>
+        </div>
+        <!-- .main-banner -->
+        <div id="content" class="site-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 layout-right-sidebar">
+                        <div id="primary" class="content-area">
+                            <main id="main" class="site-main" role="main">
+
+                                <article id="post-42" class="post-42 post type-post status-publish format-standard has-post-thumbnail hentry category-mathematics category-statistics tag-linear-regression tag-statistics">
+                                    <div class="detail-wrap">
+                                        <header class="entry-header">
+                                            <span class="cat-links"> <a href="" rel="category tag">Programming</a></span>
+                                            <h1 class="entry-title">Cox point process</h1> </header>
+                                       
+
+                                        <div class="entry-content">
+                                             <!-- .entry-header -->
+ 
+                                             
+                                             <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                             36.0pt;background:white'><span style='font-size:30.0pt;font-family:"Georgia",serif'>&nbsp;</span></p>
+                                             
+                                             <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+                                             text-align:center;line-height:36.0pt;background:white'><span style='font-size:
+                                             30.0pt;font-family:"Georgia",serif;color:#404040'><img width=454 height=240
+                                             id="Picture 2" src="img_1.png"></span></p>
+                                             
+                                            </br>
+                                             <!--Put in a dynamic graphic here of point process-->
+
+
+                                            <!--1. Psedo code 2.Python implemenation 3. javascript implementation-->
+<pre><code class="python">def fib(n):
+    a, b = 0, 1
+      while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+        print()
+    fib(1000)</code>
+</code></pre>
+
+
+                                             <p class=je style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><strong><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt;background:white'>Background:</span></strong></p>
+                                             
+                                             <p class=je style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt;background:white'>I have been working as a Principal Analyst on proof of
+                                             concept project supporting migration to Cloud Computing for my company. Having
+                                             completed the project (over two years) and a taste of development
+                                             and deployment on the AWS, I am very keen to learn in a more structured
+                                             approach and fill missing knowledge gaps. Also seeing the capability particularly
+                                             with scalability, reproducibility and infrastructure as code I have chosen the
+                                             DevOps learning path.</span></p>
+
+
+                                             <p class=je style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt;background:white'>After the Developer associate exam,
+                                             I am now attempting the SysOps Administrator in preparations for DevOps professional. The SysOps exam validates
+                                             technical expertise in deployment, management, and operations on the AWS
+                                             platform. Exam concepts you should understand for this exam include:</span></p>
+
+                                             
+                                             <p class=je style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                             background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                             -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>Deploying, managing, and operating scalable,
+                                             highly available, and fault tolerant systems on AWS</span></p>
+                                             
+                                             <p class=je style='margin-top:12.6pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                             background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                             -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>Migrating an existing on-premises
+                                             application to AWS</span></p>
+                                             
+                                             <p class=je style='margin-top:12.6pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                             background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                             -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>Implementing and controlling the flow of
+                                             data to and from AWS</span></p>
+                                             
+                                             <p class=je style='margin-top:12.6pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                             background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                             -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>Selecting the appropriate AWS service based
+                                             on compute, data, or security requirements</span></p>
+                                             
+                                             <p class=je style='margin-top:12.6pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                             background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                             -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>Identifying appropriate use of AWS
+                                             operational best practices</span></p>
+                                             
+                                             <p class=je style='margin-top:12.6pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                             background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                             -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>Estimating AWS usage costs and identifying
+                                             operational cost control mechanisms</span></p>
+                                             
+                                             <p class=hb style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><strong><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>My learning path and recommendations. </span></strong></p>
+                                             
+                                             <p class=hb style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white;
+                                             box-sizing: inherit;color:rgba(0, 0, 0, 0.84);word-break:break-word;font-variant-ligatures: normal;
+                                             font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+                                             text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+                                             0px' id=0d45 data-selectable-paragraph=""><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>1. Firstly, I went
+                                             through <a
+                                             href="https://acloud.guru/learn/aws-certified-sysops-administrator-associate-2019"
+                                             target="_blank"><span style='text-decoration:none'>A Cloud Guru</span></a>                                          
+                                             course to prepare for my content. Taking notes especially around exam tips, having used them
+                                             for the Developers I am a little more familiar with style and some cross order content 
+                                             (recommend increasing play to 1.5 or 2x).</span></p>
+                                             
+                                             <p class=hb style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>2. For practice tests I used <a
+                                             href="https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/"
+                                             target="_blank"><span style='text-decoration:none'>Udemy</span></a>. In the past
+                                             I had used <a
+                                             href="https://www.whizlabs.com/aws-sysops-administrator-associate/practice-tests/"
+                                             target="_blank"><span style='text-decoration:none'>WhizLabs</span></a>  and would
+                                             recommend both, however Udemy at the time had a special price.  For practice
+                                             tests after completing, it is important to review all answers (not just the incorrect)
+                                             and relate them to AWS documentations. Ensure you are achieving a 85– 90% before
+                                             attempting exam.</span></p>
+                                             
+                                             <p class=hb style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>3.&nbsp;The <a href="https://aws.amazon.com/faqs/" target="_blank"><span
+                                             style='text-decoration:none'>AWS FAQs</span></a> are a very good revision and
+                                             will add to your understanding of concepts.</span></p>
+                                             
+                                             <p class=hb style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white;
+                                             box-sizing: inherit;color:rgba(0, 0, 0, 0.84);word-break:break-word;font-variant-ligatures: normal;
+                                             font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+                                             text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+                                             0px' id=16ef data-selectable-paragraph=""><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>4. I had a quick
+                                             skim through some of the recommended white papers.</span></p>
+                                             
+                                             <p class=hb style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>5. As a visual learner I found sketching a mind map putting together concepts/ideas
+                                             and making some cheat sheets.</span></p>
+                                             
+                                             <p class=hb style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>Based on my memory from the last exams I will adopt the following approaches
+                                             1) eliminating incorrect questions 2) using flag to review questions 3) keeping
+                                             an eye on time. My focus is on having a solid foundation on the below content and concepts.</span></p>
+                                             
+                                             <p class=hb style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><strong><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>Concepts</span></strong></p>
+                                             
+                                             <h2 style='margin-top:20.65pt;background:white'><span style='font-size:19.5pt;
+                                             line-height:107%;font-family:"Lucida Sans Unicode",sans-serif;letter-spacing:
+                                             -.25pt'>Networking</span></h2>
+                                             
+                                             <p class=MsoNormal>&nbsp;</p>
+                                             
+                                             <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                             "Georgia",serif;color:#404040;letter-spacing:-.05pt;background:white'>VPC is heavily
+                                             tested in exam. One thing you should be able to do is confidently create a
+                                             simple VPC with NAT and security groups, Access Control Lists, custom routeing
+                                             and load balancing. The following scenarios help with my understanding of how
+                                             all the components needed in a VPC work together.</span></span></p>
+                                             
+                                             <p class=MsoNormal><img border=0 width=522 height=452 id="Picture 3"
+                                             src="vpc.jpg"></p>
+                                             <p class=MsoNormal><span style='font-family:"Lucida Sans Unicode",sans-serif;
+                                             color:#404040;background:white'>Source: aws.amazon.com</span></span></p>
+                                             
+
+                                             <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                                "Georgia",serif;color:#404040;letter-spacing:-.05pt;background:white'>CIDR assignment</span></span></p>
+                                             
+                                             <p class=gy style='margin-top:10.3pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                             background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                             -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>In a Route Table, the destination is always
+                                             a CIDR block (like 0.0.0.0/0).</span></p>
+                                             
+                                             <p class=gy style='margin-top:12.6pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                             background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                             -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>And the target is often the logical ID of an
+                                             AWS resource (like&nbsp;</span><code style='box-sizing: inherit;background-color:
+                                             rgba(0, 0, 0, 0.05)'><span style='font-size:10.0pt;color:#404040;letter-spacing:
+                                             -.05pt'>igw-xxxxxxxx</span></code><span style='font-size:16.0pt;font-family:
+                                             "Georgia",serif;color:#404040;letter-spacing:-.05pt'>) for the internet gateway).</span></p>
+                                             
+                                             <p class=gy style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white;
+                                             box-sizing: inherit;word-break:break-word;color:rgba(0, 0, 0, 0.84);font-variant-ligatures: normal;
+                                             font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+                                             text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+                                             0px' id=aabc data-selectable-paragraph=""><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>Example in a
+                                             private subnet’s route table:</span></p>
+                                             
+                                             <pre style='box-sizing: inherit;overflow-x: auto;background:rgba(0, 0, 0, 0.05);
+                                             color:rgba(0, 0, 0, 0.8);font-variant-ligatures: normal;font-variant-caps: normal;
+                                             orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+                                             text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+                                             0px'><span data-selectable-paragraph="" style='box-sizing: inherit;color:rgba(0, 0, 0, 0.84);
+                                             white-space:pre-wrap' id=fe45><span class=ix><span style='font-size:12.0pt;
+                                             letter-spacing:-.25pt'>Destination: 0.0.0.0/0 Target:i-2c2304np</span></span></span></pre>
+                                             
+                                             <p class=gy style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white;
+                                             box-sizing: inherit;word-break:break-word;color:rgba(0, 0, 0, 0.84);font-variant-ligatures: normal;
+                                             font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+                                             text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+                                             0px' id=2935 data-selectable-paragraph=""><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>Here&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>i-2c2304np</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>&nbsp;is the logical id of a NAT gateway. Any traffic from this private
+                                             subnet that’s destined for the internet (</span><code style='box-sizing: inherit;
+                                             background-color:rgba(0, 0, 0, 0.05)'><span style='font-size:10.0pt;color:#404040;
+                                             letter-spacing:-.05pt'>0.0.0.0/0</span></code><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>) will go to the
+                                             NAT gateway. A NAT gateway allows an AWS resource’s private IP address to be
+                                             “translated” so it can reach the internet.</span></p>
+                                             
+                                             <p class=gy style='margin-top:10.3pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>You can assign a netmask of&nbsp;</span><code style='box-sizing: inherit;
+                                             background-color:rgba(0, 0, 0, 0.05)'><span style='font-size:10.0pt;color:#404040;
+                                             letter-spacing:-.05pt'>/16</span></code><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>&nbsp;(65,536 IP
+                                             addresses) to&nbsp;</span><code style='box-sizing: inherit;background-color:
+                                             rgba(0, 0, 0, 0.05)'><span style='font-size:10.0pt;color:#404040;letter-spacing:
+                                             -.05pt'>/28</span></code><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>&nbsp;(16 IP addresses) for your AWS VPCs
+                                             and subnets. How many IP addresses do you get with a netmask of&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>/25</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>?</span></p>
+                                             
+                                             <pre><span class=ix><span style='font-size:12.0pt;letter-spacing:-.25pt'>32 – </span></span><strong
+                                             style='box-sizing: inherit'><span style='font-size:12.0pt;font-family:"Courier New";
+                                             letter-spacing:-.25pt'>25</span></strong><span class=ix><span style='font-size:
+                                             12.0pt;letter-spacing:-.25pt'> = 7</span>. </span></span><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;letter-spacing:-.05pt'>Then take that&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:12.0pt;letter-spacing:-.05pt'>7</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;letter-spacing:-.05pt'>&nbsp;and </span><span
+                                             class=ix><span style='font-size:12.0pt;letter-spacing:-.25pt'>2</span></span><span
+                                             class=ix><span style='font-size:12.0pt;font-family:"Cambria Math",serif;
+                                             letter-spacing:-.25pt'>&#8311;</span></span><span class=ix><span
+                                             style='font-size:12.0pt;letter-spacing:-.25pt'> = </span></span><strong
+                                             style='box-sizing: inherit'><span style='font-size:12.0pt;font-family:"Courier New";
+                                             letter-spacing:-.25pt'>128</span></span></strong></pre>
+                                             
+                                             <p class=gy style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white;
+                                             box-sizing: inherit;word-break:break-word;color:rgba(0, 0, 0, 0.84);font-variant-ligatures: normal;
+                                             font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+                                             text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+                                             0px' id=f794 data-selectable-paragraph=""><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>So, a netmask of&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>/n</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>&nbsp;has&nbsp;</span><code style='box-sizing: inherit;background-color:
+                                             rgba(0, 0, 0, 0.05)'><span style='font-size:10.0pt;color:#404040;letter-spacing:
+                                             -.05pt'>2^(32-n)</span></code><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                             color:#404040;letter-spacing:-.05pt'>&nbsp;IP addresses. And&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>/n</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>&nbsp;can be between 16 and 28. Where does that&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>32</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>&nbsp;come from? An IP address has 32 possible binary values:&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>00000000.00000000.00000000.00000000</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>.</span></p>
+                                             
+                                             <p class=gy style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white;
+                                             box-sizing: inherit;word-break:break-word;color:rgba(0, 0, 0, 0.84);font-variant-ligatures: normal;
+                                             font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+                                             text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+                                             0px' id=aebc data-selectable-paragraph=""><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>Where does the&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>2^</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>&nbsp;come from? Each of the four groups of 8 zeros (octets) listed
+                                             above represent 256, 128, 64, 32, 16, 8, 4, 2, in other words, the powers of&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>2</span></code><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>.</span></p>
+                                             
+                                             <p class=gy style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white;
+                                             box-sizing: inherit;word-break:break-word;color:rgba(0, 0, 0, 0.84);font-variant-ligatures: normal;
+                                             font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+                                             text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+                                             0px' id=769e data-selectable-paragraph=""><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>AWS typically
+                                             uses about 5 IP addresses of those IP addresses, to help you manage your
+                                             network. So, with a netmask of&nbsp;</span><code style='box-sizing: inherit;
+                                             background-color:rgba(0, 0, 0, 0.05)'><span style='font-size:10.0pt;color:#404040;
+                                             letter-spacing:-.05pt'>/n</span></code><span style='font-size:16.0pt;
+                                             font-family:"Georgia",serif;color:#404040;letter-spacing:-.05pt'>, you have&nbsp;</span><code
+                                             style='box-sizing: inherit;background-color:rgba(0, 0, 0, 0.05)'><span
+                                             style='font-size:10.0pt;color:#404040;letter-spacing:-.05pt'>2^(32-n) – 5 </span></code><strong><span
+                                             style='font-size:16.0pt;font-family:"Georgia",serif;color:#404040;letter-spacing:
+                                             -.05pt'>usable&nbsp;</span></strong><span style='font-size:16.0pt;font-family:
+                                             "Georgia",serif;color:#404040;letter-spacing:-.05pt'>IP addresses.</span></p>
+                                             
+                                            <h2 style='margin-top:20.65pt;background:white'><span style='font-size:19.5pt;
+                                             line-height:107%;font-family:"Lucida Sans Unicode",sans-serif;letter-spacing:
+                                             -.25pt'> </span>Security and Compliance</h2></br>
+                                            
+                                            <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                            "Georgia",serif;color:#404040;letter-spacing:-.05pt;background:white'>In Security Group and NACLs there may
+                                            be various questions around inbound and outbound rules for security groups and NACLs.</span></span></p>
+                                                
+                                
+                                            <p class=MsoNormal><img border=0 width=1140 height=413 id="Picture 4"
+                                            src="security_group_nacls.jpg"></p>
+                                             
+                                             
+                                             <h2 style='margin-top:20.65pt;background:white'><span style='font-size:19.5pt;
+                                             line-height:107%;font-family:"Lucida Sans Unicode",sans-serif;letter-spacing:
+                                             -.25pt'></span>Storage and Data Managements</h2></br>
+                                        
+                                             <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                             "Georgia",serif;letter-spacing:-.05pt'>S3<span style='color:#404040;background:
+                                             white'> &nbsp;- Lifecycle policies, bucket policies, analytics vs server access
+                                             log and differences in storages.</span></span></p>
+                                             
+                                             <p class=gy style='margin-top:24.0pt;margin-right:0cm;margin-bottom:0cm;
+                                             margin-left:0cm;margin-bottom:.0001pt;line-height:24.0pt;background:white'><span
+                                             style='color:black'><img border=0 width=1121 height=466 id="Picture 5"
+                                             src="s3_efs_ebs.jpg"></span></p>
+
+                                            <h2 style='margin-top:20.65pt;background:white'><span style='font-size:19.5pt;
+                                                line-height:107%;font-family:"Lucida Sans Unicode",sans-serif;letter-spacing:
+                                                -.25pt'> </span>Deployment and Provisioning</h2></br>
+
+                                            <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                                "Georgia",serif;letter-spacing:-.05pt'><span style='color:#404040;background:
+                                                white'>Be aware of limitations with EC2, such as 20 on-demand and reserved instances. 
+                                                Also, the various configuration of CPU, memory, storage and networking instances. </span></span></p>
+
+
+                                            <p class=gy style='margin-top:10.3pt;margin-right:0cm;margin-bottom:0cm;
+                                                margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                                background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                                -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                                color:#404040;letter-spacing:-.05pt'>t-type and m-type for general purpose</span></p>                                                
+
+                                                <p class=gy style='margin-top:10.3pt;margin-right:0cm;margin-bottom:0cm;
+                                                margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                                background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                                -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                                color:#404040;letter-spacing:-.05pt'>c-type for compute optimised</span></p>     
+            
+                                                <p class=gy style='margin-top:10.3pt;margin-right:0cm;margin-bottom:0cm;
+                                                margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                                background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                                -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                                color:#404040;letter-spacing:-.05pt'>r-type, x-type and z-type for memory optimised</span></p>      
+
+                                                <p class=gy style='margin-top:10.3pt;margin-right:0cm;margin-bottom:0cm;
+                                                margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                                background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                                -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                                color:#404040;letter-spacing:-.05pt'>d-type, h-type and i-type for storage optimised</span></p>  
+
+
+                                                <p class=gy style='margin-top:10.3pt;margin-right:0cm;margin-bottom:0cm;
+                                                margin-left:22.5pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:24.0pt;
+                                                background:white'><span style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+                                                -.05pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </span></span><span style='font-size:16.0pt;font-family:"Georgia",serif;
+                                                color:#404040;letter-spacing:-.05pt'>f-type, g-type and p-type for accelerated computing</span></p>  
+
+
+                                                </br><p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                                "Georgia",serif;letter-spacing:-.05pt'>For more detail and to help commit to memory see the below table description and
+                                                mnemonic .</span></p>                                           
+
+                                                <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+                                                text-align:center;line-height:36.0pt;background:white'><span style='font-size:
+                                                30.0pt;font-family:"Georgia",serif;color:#404040'><img 
+                                                id="Picture 3" src="ec2_instances.jpg"></span></p>
+
+
+                                                </br><h2 style='margin-top:20.65pt;background:white'><span style='font-size:19.5pt;
+                                                    line-height:107%;font-family:"Lucida Sans Unicode",sans-serif;letter-spacing:
+                                                    -.25pt'>Monitoring and Metrics</span></h2> </br>
+  
+                                                <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                                    "Georgia",serif;letter-spacing:-.05pt'> For billing and be familiar with Cost Optimization Monitor, TCO calculator, Simple Monthly Calculator and information in AWS Pricing page.</span></p>  
+
+                                                <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                                    "Georgia",serif;letter-spacing:-.05pt'> For system critical day to day operations understand functionality of X-Ray, QuickSight, trusted advisor, cloudwatch dashboard, service vs personal health dashboard and cloudtrail monitoring.
+                                                    Cloudwatch monitoring scripts for memory, swap and disk space utilisation and enabling detail monitoring for under 5min periods and aggregation of data.</span></p>  
+                                                    
+                                                    
+                                             <h2 style='margin-top:20.65pt;background:white'><span style='font-size:19.5pt;
+                                             line-height:107%;font-family:"Lucida Sans Unicode",sans-serif;letter-spacing:
+                                             -.25pt'>Conclusion</span></h2> </br>
+                                             
+                                             <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+                                             "Georgia",serif;letter-spacing:-.05pt'>So these are my exam tips, hope it helps
+                                             with your study and wish you lots of success!</span></p>                                           
+                                             
+                                        </div>
+                                        <!-- .entry-content -->
+                                    </div>
+                                </article>
+
+                            </main>
+                            <!-- #main -->
+                        </div>
+                        <!-- #primary -->
+                    </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <aside id="secondary" class="widget-area" role="complementary">
+            
+                                        <section id="search-2" class="widget widget_search">
+                                            <form role="search" method="get" class="search-form" action="">
+                                                <label>
+                                                    <span class="screen-reader-text">Search for:</span>
+                                                    <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+                                                </label>
+                                                <input type="submit" class="search-submit" value="Search" />
+                                            </form>
+                                        </section>
+                                        <section id="recent-posts-2" class="widget widget_recent_entries">
+                                            <h2 class="widget-title">Recent Posts</h2>
+                                            <ul>
+                                                <li>
+                                                    <a href="sysops_aws_exam.html">SysOps Administrator Exam</a>
+                                                </li>
+                                                <li>
+                                                    <a href="../04/real_analysis_proofs.html">Real Analysis</a>
+                                                </li>
+            
+                                            </ul>
+                                        </section>
+                                        <section id="recent-comments-2" class="widget widget_recent_comments">
+                                            <h2 class="widget-title">Recent Comments</h2>
+                                            <ul id="recentcomments">
+                                                <li class="recentcomments"><span class="comment-author-link"><a href='' rel='external nofollow' class='url'>geometry dash</a></span> on <a href="/first-post/#comment-2">First Post</a></li>
+                                            </ul>
+                                        </section>
+                                        <section id="archives-2" class="widget widget_archive">
+                                            <h2 class="widget-title">Archives</h2>
+                                            <ul>
+                                                <li><a href='../10/fitting_linear_regression_models_part2.html'>October 2017</a></li>
+                                                <li><a href='../07/fitting_linear_regression_models.html'>July 2017</a></li>
+                                            </ul>
+                                        </section>
+                                        <section id="categories-2" class="widget widget_categories">
+                                            <h2 class="widget-title">Categories</h2>
+                                            <ul>
+                                                <li class="cat-item cat-item-4"><a href="">Economics</a>
+                                                </li>
+                                                <li class="cat-item cat-item-3"><a href="">Mathematics</a>
+                                                </li>
+                                                <li class="cat-item cat-item-5"><a href="">Spatial</a>
+                                                </li>
+                                                <li class="cat-item cat-item-2"><a href="">Statistics</a>
+                                                </li>
+                                            </ul>
+                                        </section>
+            
+                                    </aside>
+                                    <!-- #secondary -->
+                                </div>                            
+
+
+
+                            <!-- #post-## -->    
+                            <nav class="navigation post-navigation" role="navigation">
+                                <h2 class="screen-reader-text">Post navigation</h2>
+                                <div class="nav-links">
+                                    <div class="nav-next"><a href="../../../posts.html" rel="next">Blog home</a></div>
+                                </div>
+                            </nav>
+
+                            </main>
+                            <!-- #main -->
+                        </div>
+                        <!-- #primary -->
+                    </div>
+                    <!-- .col-md-8 -->
+                    
+
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- #content -->
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="site-info">
+                <div class="container">
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .site-info -->
+        </footer>
+        <!-- #colophon -->
+
+    </div>
+    <!-- #page -->
+
+    <a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-angle-up"></i></a>
+
+</body>
+
+</html>->
+                    
+
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- #content -->
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="site-info">
+                <div class="container">
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .site-info -->
+        </footer>
+        <!-- #colophon -->
+
+    </div>
+    <!-- #page -->
+
+    <a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-angle-up"></i></a>
+
+</body>
+
+</html>
